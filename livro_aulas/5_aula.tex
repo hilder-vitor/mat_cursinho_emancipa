@@ -1,0 +1,212 @@
+% Aula de potênciação, radiciação e fatoração.
+\documentclass[a4paper,12pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}	% Começo do conteúdo.
+
+\title{Matemática}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+\date{01/03/2012}
+\maketitle
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Capítulo sobre equações de segundo grau	%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Equações de Segundo Grau]{Equações de Segundo Grau}
+
+
+\section{Introdução}
+	
+	Neste capítulo vamos estudar um tipo diferente de equações: as equações do segundo grau. \\
+	Elas diferem das equações lineares pelo fato de que a icógnita aparece elevada ao quadrado.\\
+	Só isto já torna este tipo de equação muito mais interessante (alguns vão dizer mais difíceis, mas eu discordo dos que dizem isto). \\
+	Também é um tipo de equação muito comum nos vestibulares.
+
+%%%%%%%%
+% Definição de equação quadrática.
+%%%%
+\section{Definição}
+	Uma equação do segundo grau (também conhecida como equação quadrática) é uma equação da forma (ou que pode ser escrita na forma)
+		$$a \cdot x^2 + b \cdot x + c = 0$$
+	com $a \neq 0$ e $x$ sendo a icógnita. \\
+
+
+
+\section{Propriedades}
+	Diferente de uma equação do primeiro grau, uma equação quadrática nem sempre tem solução, isto quer dizer que as vezes não existem um valor real que a satisfaça.\\
+	Por exemplo, se considerarmos a equação
+		$$x^2 = -9$$
+	Como não há nenhum valor real que elevado ao quadrado resulte em um número negativo, esta equação não tem solução (neste caso, dizemos que o conjunto solução é vazio).\\
+	Mas, se retirássemos o sinal de menos, ficando com a equação
+		$$x^2 = 9$$
+	então, poderíamos tirar a raíz dos dois lados e obter 
+		$$x = \pm \sqrt {9} =  \pm 3$$
+	ou seja, os valores $3$ e $-3$ seriam solução. \footnote{Em uma equação do segundo grau, sempre que tiramos a raíz de ambos os lados, temos que colocar os sinais de mais e menos ($\pm$), pois tanto o valor negativo quanto o positivo é solução.}.\\
+	Neste caso, a equação tem duas soluções distintas. \\
+	Além disto, como veremos mais adiante, ainda pode acontecer de haver apenas uma solução para uma equação do segundo grau. \\
+	Assim, notamos a primeira propriedade interessante de uma equação quadrática: \\ \\
+
+	\emph{Uma equação do segundo grau pode ter duas, uma ou nenhuma solução.}\\ \\
+
+
+\section{Resolvendo}
+	Sabemos reconhecer uma equação do 2º grau, sabemos que ela pode ou não ter solução, mas como é que encontramos essas soluções? \\
+	Em geral, usamos a famosa \emph{fórmula de Baskara}:\\
+	Considere a equação
+		$$ax^2 + bx + c = 0$$
+	com $a$ diferente de zero. \\
+	Se divirmos ambos os lados por $a$, obtemos
+		$$x^2 + \frac{b}{a}x + \frac{c}{a} = 0$$
+	Agora, notando que $1 = \frac{2}{2}$, podemos multiplicar o segundo termo por essa fração sem alterar a igualdade:
+		$$x^2 + 2\frac{b}{2a}x + \frac{c}{a} = 0$$
+	Podemos então completar um quadrado, somando $(\frac{b}{2a})^2$ em ambos os lados:
+		$$x^2 + 2\frac{b}{2a}x + (\frac{b}{2a})^2 + \frac{c}{a}  = (\frac{b}{2a})^2$$
+	Assim, usando a fatoração do quadrado perfeito, obtemos
+		$$(x + \frac{b}{2a})^2 + \frac{c}{a}  = (\frac{b}{2a})^2$$
+	Que equivale a
+		$$(x + \frac{b}{2a})^2 = (\frac{b}{2a})^2 - \frac{c}{a}  $$
+	Simplificando a parte esquerda (multiplicando e dividindo $\frac{c}{a}$ por $4a$ e somando)
+		$$(x + \frac{b}{2a})^2 = \frac{b^2 - 4ac}{4a^2}$$
+	Tirando a raíz quadrada, obtemos:
+		$$x + \frac{b}{2a} = \pm \sqrt {\frac{b^2 - 4ac}{4a^2}} = \pm \frac{\sqrt{b^2 - 4ac}}{2a} $$
+	Subtraindo $\frac{b}{2a}$ de ambos os lados, chegamos finalmente em
+		$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+	Que nos diz que existem dois valores possíveis para o $x$: um somando a raíz e outro subtraindo.\\
+	Portanto, nos casos em que esta raíz dá zero (ou seja, quando $b^2 - 4ac = 0$), o $x$ assume apenas um valor (pois iremos somar ou subtrair zero). Este é o único caso em que a equação quadrática tem apenas  uma solução. \\
+	Por conveniência, muitos fazem $\Delta = b^2 - 4ac$ e escrevem a fórmula de Baskara como:
+		$$ x = \frac{-b \pm \sqrt{\Delta}}{2a} $$
+
+\section{Exemplos}
+	\begin{enumerate}
+	\item \textbf{Vamos resolver a equação $3x^2 + x - 4 = 0$:}\\
+		Comecemos identificando os coeficientes: neste caso $a = 3$, $b = 1$ e $c = -4$.\\
+		Agora, calculemos o discriminante:
+		$$\Delta = b^2 - 4ac = (1)^2 -4 \cdot 3 \cdot (-4) = 1 + 48 = 49$$
+		Assim, as soluções são:
+		$$x_1 = \frac{-b + \sqrt{\Delta}}{2a} = \frac{-1 + 7}{2 \cdot 3} = \frac{6}{6} = 1$$
+		e
+		$$x_2 = \frac{-b -\sqrt{\Delta}}{2a} = \frac{-1-7}{2 \cdot 3} = \frac{-8}{6} = -\frac{4}{3}$$
+
+	\item \textbf{Quais são as soluções da equação $x^2 + 2x = 0$?} \\
+		Neste caso, $a = 1$, $b = 2$ e $c = 0$.\\
+		Assim, temos $\Delta = b^2 - 4ac = 2^2 - 0 = 4$.\\
+		Portanto, as soluções são:
+		$$x_1 = \frac{-b+\sqrt{\Delta}}{2a} = \frac{-2+\sqrt{4}}{2 \cdot 1} = \frac{-2 + 2}{2} = \frac{0}{2} = 0$$
+		e
+		$$x_2=\frac{-b-\sqrt{\Delta}}{2a} = \frac{-2 - \sqrt{4}}{2 \cdot 1} = \frac{-2 - 2}{2} = -\frac{4}{2} = -2$$
+		Ou seja, as soluções desta equação são os valores $0$ e $-2$.\\
+		Poderíamos ainda resolver esta equação sem o uso da fórmula de Baskara, colocando o $x$ em evidência e usando o fato de que, quando um produto dá zero, então um de seus fatores é zero.\\
+		Ou seja, \\
+		$$x^2 + 2x = 0 \Leftrightarrow x ( x + 2) = 0$$
+		Então, $x= 0$ ou $x + 2 = 0$, que implica $x = -2$.\\
+		Logo, as soluções são $\{0, -2\}$ (note que são as mesmas de quando resolvemos com a fórmula de Baskara).
+
+	\end{enumerate}
+
+\section{Dicas}
+	É possível resolver algumas equações do 2º grau sem usar a fórmula de Baskara, economizando tempo na resolução. \\
+	Quando a equação é da forma 
+		$$ax^2 + bx = 0$$
+	ou seja, quando ela tem $c = 0$, podemos resolver simplesmente colocando $x$ em evidência, conforme fizemos no exemplo anterior, obtendo então
+	 $$x = 0 \ \  ou \ \ \ x = -\frac{b}{a}$$
+	Quando a equação é da forma
+		$$ax^2 + c  = 0$$
+	ou seja, com $b = 0$, basta passar o $c$ para o outro lado e tirar a raíz, obtendo
+		$$x = \pm \sqrt{-c}$$
+
+\section{Exercícios}
+\begin{enumerate}
+	\item Resolva as seguintes equações do segundo grau (não é necessário usar a fórmula de Baskara em todas):\\
+	\begin{enumerate}
+		\item $3x^2 - 2x -1 = 0$
+		\item $2x^2 - 2x -4 = 0$
+		\item $x^2 + x - 12 = 0$
+		\item $x^2 - 16 = 0$
+		\item $4x^2 - 16x = 0$
+		\item $x^2 + 3x + 2 = 0$
+		\item $3x^2 - 20 = 1 + 6$
+	\end{enumerate}
+
+	\item Usando o teorema de Pitágoras, descubra o comprimento da hipotenusa do triângulo retângulo.
+
+		\begin{figure}
+		\centering	
+		\includegraphics[width=0.35\textwidth]{img/trian_ret.jpg}
+			\caption{Triângulo retângulo.}
+		\end{figure}
+
+	\item Sartre e Mariane vão dividir os 2 quartos que têm em 4 quartos, pois eles adotaram duas crianças, Beethoven e Russel, e precisam de dois novos quartos para os dois.\\
+		Os quartos serão divididos conforme a figura, onde $x$ é a largura e ao  mesmo tempo o comprimento do quarto que será de Russel.\\ \\
+
+		%%%%%%%%
+		%%  Desenhando o retângulo
+		\setlength{\unitlength}{5cm}
+		\begin{picture}(1,1)
+		% marcação do comprimento da esquerda
+		\put(-0.09,0.48){$9$}
+		\put(-0.07,0){\line(0,1){0.4}}
+		\put(-0.11,0){\line(1,0){0.08}}
+		\put(-0.07,1){\line(0,-1){0.4}}
+		\put(-0.03,1){\line(-1,0){0.08}}
+		% marcação do comprimento de baixo
+		\put(0.3, -0.09){$4$}
+		\put(0, -0.06){\line(1,0){0.25}}
+		\put(0,-0.1){\line(0,1){0.08}}
+		\put(.4,-0.06){\line(1,0){0.3}}
+		\put(0.7,-0.1){\line(0,1){0.08}}
+		% marcação do comprimento do x de cima
+		\put(0.48,1.05){$x$}
+		\put(0.3,1.07){\line(1,0){0.14}}
+		\put(0.3,1.03){\line(0,1){0.08}}
+		\put(0.58,1.07){\line(1,0){0.12}}
+		\put(0.7,1.03){\line(0,1){0.08}}
+
+		% marcação do comprimento do x de cima
+		\put(0.75,.76){$x$}
+		\put(0.78, 1){\line(0,-1){.17}}
+		\put(0.81, 1){\line(-1,0){.07}}
+		\put(0.78, 0.6){\line(0,1){.12}}
+		\put(0.8, 0.6){\line(-1,0){.05}}
+
+		% desenhando o retângulo
+		\put(0,0){\line(0,1){1}}
+		\put(0,0){\line(1,0){0.7}}
+		\put(0.7,0){\line(0,7){1}}
+		\put(0,1){\line(1,0){0.7}}
+		\put(0,0.6){\line(1,0){0.7}}
+		\put(0.3,0){\line(0,1){1}}
+
+		% Legenda
+		\put(.45, .75){R}
+		\put(.12, .3){B}
+		\put(1.3, 0.7){Legenda:}
+		\put(1.6, 0.5){R: Quarto do Russel}
+		\put(1.6, 0.3){B: Quarto do Beethoven}
+
+		\end{picture}
+		
+		. \\ Como Beethoven adora tocar piano, seu quarto precisa ser maior,  já que um piano ocupa muito espaço.\\
+		Assim, Russel, que é muito bom em matemática, encontrou um valor para $x$ que fizesse com que o seu quarto ficasse com aproximadamente metade da área do quarto de Beethoven. Que valor foi esse?\\
+		\begin{enumerate}
+		\item 25
+		\item 6
+		\item 4
+		\item 12
+		\end{enumerate}
+
+
+
+
+\end{enumerate}
+\end{document}

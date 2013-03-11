@@ -1,0 +1,170 @@
+% Aula de potênciação, radiciação e fatoração.
+\documentclass[a4paper,12pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+\usepackage{amsthm}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}	% Começo do conteúdo.
+
+\title{Matemática}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+\date{01/03/2012}
+\maketitle
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre fatoração		%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Fatoração]{Fatoração}
+
+
+\section{Introdução}
+	Muitas vezes nos deparamos com expressões matemáticas que nos parecem muito ``feias'', no sentido de que parece muito difícil calcular o seu valor ou manipulá-las.
+	Mas, em vários casos, é possível reescrever a expressão de uma forma que seja  mais agradável ou conveniente. Uma destas formas é a forma fatorada, que vamos ver agora.
+
+\section{Definição}
+	Fatoração é o nome que se dá aos métodos ou ao processo de reescrever uma expressão como uma expressão na forma de produtos. \\
+	Ou seja, fatorar uma  expressão é deixá-lá na forma 
+		$$ e_1 \cdot e_2 \cdot e_3 \cdots e_n  $$
+	onde cada $e_i$ (com $i=1,2,3,4,...,n$) é uma outra expressão.\\
+	Chamamos cada $e_i$ de fator. \\
+	Por exemplo, a expressão $11 \cdot x + 11 \cdot y$ pode ser reescrita como $ 11 \cdot (x + y)$. Está  forma consiste em um produto entre o 11 e o $(x + y)$, então, esta é a forma fatorada dela. Note que ela tem dois fatores. \\
+
+\section{Técnicas de fatoração}
+	Apresentamos, a  seguir, algumas técnicas de fatoração:
+\begin{description}
+\item[Fator comun em evidência] Trata-se de observar um valor que aparece mais  de uma vez em uma expressão e reescrever a expressão como um produto deste valor e de uma outra expressão, tal que, feita a distributiva, obtenha-se novamente a expressão original. \\
+	Por exemplo:\\
+	Na expressão $13x +  xn $, vemos que o $x$ aparece duas vezes, logo, podemos colocá-lo em evidência e obter a expressão $x \cdot (13 + n)$. \\
+	Note que se fizermos a distributiva, obteremos novamente a expressão original. \\
+	Como outro exemplo, veja que colocando o $a$ e o $-b$ em evidência, chegamos a seguinte e igualdade:
+	$$ ax + ya - xb - yb = a \cdot (x + y) -b \cdot (x + y)  $$
+	então, podemos tirar o $(x + y)$ em evidência e obter
+	$$  ax + ya - xb - yb = (x + y) \cdot (a - b) $$
+	
+
+\item[Trinômio quadrado perfeito]. É uma forma de fatorar expressões que têm uma forma bem particular, porém, bem comum, principalmente entre exercícios de ensino médio e vestibular. Observe que:
+	$$ (a + b)^2 = (a + b) \cdot (a + b) = a \cdot (a + b) + b \cdot (a + b) = a^2 + a \cdot b + b \cdot a + b^2 = a^2 + 2 \cdot a \cdot b + b^2$$
+	Então, uma expressão do tipo $a^2 + 2 \cdot a \cdot b + b^2$ pode ser reescrita como $(a + b)^2$, que é sua forma fatorada. \\
+	O análogo acontece para o caso da diferença entre $a$ e $b$:
+	$$ (a - b)^2 = (a - b) \cdot (a - b) = a \cdot (a - b) - b \cdot (a - b) = a^2 - ab - ba + b^2 = a^2 - 2ab + b^2$$
+
+\item[Diferença de quadrados]. Também se trata de uma expressão com uma forma bem particular, mas que é bastante comum. Veja que,
+	$$ (a + b) \cdot (a - b) = a \cdot (a - b) + b \cdot (a - b) = a^2 - ab + ba - b^2 = a^2 + 0 + b^2 = a^2 + b^2$$
+	Logo, uma expressão da forma $a^2 - b^2$ pode ser fatorada em um produto com os seguintes termos: $(a + b) \cdot (a - b)$.
+
+
+\end{description}
+
+
+%%%%
+%% EXEMPLOS DE FATORAÇÃO
+%%%%
+\subsection{Exemplos}
+\begin{enumerate}
+\item Fatorar a expressão $36 + 12x + x^2$.\\
+	Note que esta expressão pode ser reescrita como $6^2 + 2 \cdot 6 \cdot x + x^2$ e que ela coincide com a forma de uma trinômio quadrado perfeito (com $a = 6$ e $b = x$), portanto,
+	$$36 + 12x + x^2 = (6 + x)^2$$
+	(Faça a distributiva para verificar a corretude).
+
+\item Fatorar a expressão $xy^2 +  xa^2 - 2xay$. \\
+	Colocando $x$ em evidência e usando a forma do trinômio perfeito, chegamos em
+	$$xy^2 +  xa^2 - 2xay = x \cdot (y^2 + a^2 -2ay) = x \cdot (y^2 - 2ya + a^2) = x \cdot (y - a)^2$$
+
+\item Fatorar a expressão $3x^2 + 6x + 7xy + 14y$. \\
+	Colocando $3x$ e $7y$ em evidência, chegamos a seguinte igualdade:
+	$$3x^2 + 6x + 7xy + 14y = 3x \cdot (x + 2) + 7y \cdot (x + 2) $$
+	Colocando $(x + 2)$ em evidência, chegamos em
+	$$3x^2 + 6x + 7xy + 14y = (x + 2) \cdot (3x + 7y)$$
+
+\item Fatorar a expressão $9x^2 - 4$. \\
+	Esta expressão envolve apenas uma diferença de dois elementos, além disso, há um $x$ elevado ao quadrado, isto sugere que ele pode ser fatorada como uma diferença de quadrados. \\
+	De fato, notando que $9x^2 = (3x)^2$ e que $4 = 2^2$, vemos que
+	$$ 9x^2 - 4 = (3x)^2 - 2^2 = (3x + 2) \cdot (3x -2)$$
+
+\item Se $a - b = 4$ e $a \cdot b = 6$, então, quanto vale $a^2 + b^2$? \\
+	Como somar com zero não muda o valor da expressão, podemos escrever: \\
+	$a^2 + b^2 = a^2 + b^2 + 0 \ \ \ \ \  \ \ \ \ \ \   \Leftrightarrow$ \ \ Como $-2ab + 2ab = 0$ \\
+	$a^2 + b^2 = a^2 - 2ab + b^2 + 2ab \Leftrightarrow$ \  Trinômio do quadrado perfeito\\
+	$a^2 + b^2 = (a - b)^2 + 2ab \ \ \ \ \ \ \  \Leftrightarrow$ \ Substituindo os valores dados \\
+	$a^2 + b^2 = (4)^2 + 2 \cdot 6 = 16 + 12 = 28$
+
+\end{enumerate}
+
+\pagebreak
+
+\section{Exercícios}
+\begin{enumerate}
+\item Fatore as seguintes expressões:
+	\begin{enumerate}
+		\item  $x^2 - 2^2$
+		\item  $x^2  + xy + x$
+		\item  $y^2  - 1$
+		\item  $3x^3 + 2x^2 -3x -2$
+		\item  $x^2 - w^2 -x +w$
+		\item  $ax + x^2 + 2xy + ay +y^2$
+		\item  $4x^2 - 12 + 4$
+		\item  $a^3b - ab^3$
+		\item  $(x + y) \cdot (xy + 1) -y \cdot (x^2 + 1 + xy)$
+		\item  $x^4 - 1$
+		\item  $a^4 + 2a^2b^2 + b^4$
+		\item  $a - 2\sqrt{a}\sqrt{b} + b$
+		\item  $k^2 - p^2 + k + p$
+		\item  $x^2 + 8x + 16$
+		\item  $30 + x^2 + 12x + 6$
+		\item  $x^2 + w^2 + 2xy + y^2$
+		\item  $y^4 + y^2 + \frac{1}{4}$
+		\item  $-1 + x^2 + 2y - y^2$
+		\item  $x^3 + 8x^2 + 16x$
+	\end{enumerate}
+
+\item Simplifique a expressão $\left( \frac{1}{b - a}\right) \cdot \frac{(ax - a^2 -bx + b^2)}{b -x + a}$ 
+
+\item Desenvolva as expressões a seguir (estas são formas fatoradas interessantes):
+	\begin{enumerate}
+		\item  $(x - y) \cdot (x^2 + xy + y^2)$
+		\item  $(x + y)^3$
+	\end{enumerate}
+
+\item (FATEC-2002) Sabe-se que $a^2 - 2bc -b^2 -c^2  = 40$ e que $a - b - c = 10$, com $a$, $b$ e $c$ números reais. Então, quanto vale $a + b + c$?
+	\begin{enumerate}
+		\item  1
+		\item  2
+		\item  4
+		\item  10
+		\item  20
+	\end{enumerate}
+
+\item (FEI-2005) Ao fatorar e simplificar a seguinte expressão algébrica
+		$$ \frac{abx^2 + aby^2 + a^2xy + b^2xy}{ax + by} $$
+		 com $ax + by \neq 0$, obtemos:
+	\begin{enumerate}
+		\item  2
+		\item  1
+		\item  $ax + by$
+		\item  $ay + bx$
+		\item  $ax + b$
+	\end{enumerate}
+
+\item (Mack-98) Se $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = \frac{10}{3}$, então $a + a^{-1}$ vale:
+	\begin{enumerate}
+		\item  $\frac{100}{9}$
+		\item  $\frac{83}{3}$
+		\item  $\frac{82}{9}$
+		\item  $\frac{100}{82}$
+		\item  $\frac{16}{9}$
+	\end{enumerate}
+
+\item (FUVEST-Segunda fase-Modificado) Fatorar $a^4 + a^2 + 1$. \\
+
+\end{enumerate}
+
+
+\end{document}

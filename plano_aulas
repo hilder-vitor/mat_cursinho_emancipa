@@ -1,0 +1,69 @@
+
+
+Faixa 1:
+
+	1.
+		- Conjuntos: união, intersecção, conjunto vazio, conjunto universo, complemento.
+		- Números naturais, inteiros, racionais, irracionais, reais (intervalos).
+		- Inequações, relações de menor, menor ou igual, maior, maior ou igual e regiões definidas por inequações.
+
+	2.
+        - Fatoração (quadrados perfeitos, diferença de quadrados), potenciação, radiciação, resoluções expressões algébricas.
+
+	3.
+		- Equações de primeiro.
+
+	4.
+		- Equações do segundo grau (propriedades do discriminante), equações exponenciais, equações de quarto grau da forma ax^4 + bx^2 + c = 0, equações com módulo.
+
+
+
+
+	Álgebra:
+            - Símbolos matemáticos e notações comuns (talvez não seja necessário enfatizar nisto e ir comentando a medida que eles forem sendo usados nas aulas).
+            - Desigualdade triangular para módulos.
+                       - Sistemas de equações lineares (até quatro variáveis).
+            - Vetores, matrizes, operações com matrizes, determinantes, matriz inversa.
+            - Resolução de sistemas lineares com matrizes (escalonamento).
+			- PA e PG, propriedades, somas.
+			- Números complexos, formas de representar, conjugado, soma, produto, divisão, potenciação e radiciação em C, interpretações.
+			- Polinômios com raízes complexas, igualdade entre polinômios, equações de girard, TFA, divisão de polinômios, fatoração de polinômios.
+
+	Funções:
+            - Definição (intuitiva e formal), reconhecendo uma função, domínio, contradomínio, imagem, plano cartesiano.
+			- Gráficos de funções.
+			- Funções importantes: linear, módulo, polinomial, raiz quadrada, 1/x, 1/x², exponencial, logarítmica (e suas propriedades).
+	        - Trigonometria:
+	            * Funções trigonométricas: seno, cosseno, tangente, secante, cossecante, cotangente;
+	            * Círculo trigonométrico, ângulos notáveis, graus e radianos;
+	            * Equações trigonométricas, teorema fundamental da trigonometria, soma e diferença de arcos;
+            - Máximos, mínimos, biunivocidade, simetrias, intervalos de crescimento e descrescimento, análise da variação da função, inversas.
+
+
+	Geometria:
+			- Ângulos: graus e radianos (também presente em Funções -> Trigonometria), teorema de Tales, angulos alternos internos
+			- Plana:
+				* Triangulos: equiláteros, escalenos, isóceles, retângulos, teorema de Pitágoras, perímetro, altura, área, relações com seno, cosseno e tangente.
+				* Retângulos, quadrados, losangos, trapézio, áreas, diagonais, altura.
+				* Polígonos: convexos, vértices, arestas, diagonais, áreas (a partir de outras conhecidas...)
+				* Círculos, setores circulares, relações entre arcos e ângulos internos.
+				* Figuras inscritas: relações entre círculos e demais figuras.
+				* Lei dos senos, lei dos cossenos.
+			- Tridimensional:
+				* Paralelepipedos, cubos, arestas, diagonais, volumes, área das faces.
+				* Prismas, pirâmides, esfera, cilindros, cones, troncos, volume, área das faces.
+			- Analítica:
+				* Equação da reta, interpretação do coeficiente angular e do coeficiente linear, paralelismo, perpendicularidade
+				* Distâncias entre pontos (bi e tri dimensional), entre ponto e reta.
+				* Equação da circunferência: reconhecimento do centro, do raio, das retas tangentes e secantes.
+				* Equações das elipses, hipérboles (acho que cai pouco), parábolas.
+				* Inequações como lugares geométricos.
+
+
+	Combinatória, probabilidade e estística:
+			- Princípio fundamental da contagem, fatorial, princípio aditivo, arranjos, combinações, Binômio de Newton.
+			- Espaços amostrais equiprováveis e finitos, frequência relativa.
+			- Probabilidade de um evento, da união, da intersecção, eventos disjuntos, indepêndencia, condicional. Aplicações.
+			- Estatística: população e amostra, média, mediana, moda, desvio-médio, desvio-padrão, variância.
+			- Juros simples e composto (relações com PA e PG), porcentagem.
+

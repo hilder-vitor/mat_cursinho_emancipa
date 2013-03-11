@@ -1,0 +1,213 @@
+% Aula de potênciação, radiciação e fatoração.
+\documentclass[a4paper,12pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+\usepackage{amsthm}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}	% Começo do conteúdo.
+
+\title{Matemática}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+\date{01/03/2012}
+\maketitle
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre radiciação		%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Radiciação]{Radiciação}
+
+
+\section{Introdução}
+	No ano de 1202, um matemático italiano chamado \emph{ Leonardo Fibonacci} escreveu, em seu livro ``\emph{ Líber Abbaci}''\footnote{Este livro é muito importante na história da  matemática e da humanidade. Ele foi uma das principais influencias para que os europeus parassem de utilizar os algarismos romanos  e  passassem a ultilizar os algarismos arábicos (0,1,2,4,5,6,7,8,9)} (o livro foi escrito em latim. Uma boa tradução é "Livro do Cálculo") a seguinte frase: \\
+	\begin{quote} 
+		``Radix quadratum 16 aequalis 4''
+	\end{quote}
+	Ela pode ser traduzida como ``\emph{o lado de um quadrado de 16 é igual a 4}''. O que ele queria dizer é que, se um quadrado tem uma área igual a 16, então o lado desse quadrado é igual a  4. \\
+	As pessoas passaram a escrever \emph{ radix quadratum n} para se referir ao lado  de um quadrado de área igual a n. Depois, com o passar do tempo, estavam escrevendo simplesmente \emph{ radix n}. O tempo foi passando e se tornou comum escrever somente $rn$. \\
+	Com o passar do tempo (e a ajuda da caligrafia ruim das pessoas) esse $r$ foi mudando até virar o símbolo tão conhecido por todos, que é
+	$$ \sqrt{n} $$
+
+ 	É daí que vem o nome da famosa operação \emph{ raíz quadrada}. \\
+	O que a expressão $\sqrt{n}$ diz então, é: \emph{ qual é o lado de uma quadrado que tem área igual a $n$?}.
+\\	Com a evolução da matemática, este conceito foi generalizado, e hoje temos também raíz cúbica,  raíz quarta, e assim por diante.
+\\	Neste capítulo vamos estudar essas operações, suas propriedades e suas relações com a potênciação.
+	Esta área da matemática, que estuda as operações de raízes quadradas, cúbicas e todas as outras, se chama \emph{ radiciação}.
+	Neste capítulo e no restante do  livro, assumiremos que as \textbf{ propriedades de potências com expoentes inteiros valem também para expoentes racionais}\footnote{Na verdade aquelas propriedades demonstradas no capítulo de Potenciação valem para qualquer expoente real, mas, infelizmente, para provarmos que isto é verdade temos que usar conhecimentos avançados de matemática}. Com isso, podemos fazer, por exemplo, $2^{1/2} \cdot 2^{1/2} = 2^{1/2 + 1/2} = 2^1$.
+
+\section{Raíz quadrada}
+	A raíz quadrada é o caso mais simples da radiciação. Tem uma interpretação geométrica (como descrito na introdução) e é bastante utilizada, pricipalmente pelo fato de ser necessária para resolver \emph{ equações de segundo grau}.
+\subsection{Definição}
+	Definimos a raíz quadrada de um número a como um número b, maior ou igual a zero, tal que o multiplicando-se b por b obtemos a. \\
+	Ou seja,
+		$$ \sqrt{a} = b \Leftrightarrow b^2 = a$$
+	Por exemplo, \\ $\sqrt{9} = 3$, pois $3^2 = 3 \cdot 3 = 9$; \\
+		$\sqrt{121} = 11$,  pois  $11^2 =  121$.
+\subsection{Propriedades da raíz quadrada}
+\textbf{ $\sqrt{a} = a^{\frac{1}{2}}$} \\
+	O que esta propriedade nos diz é que a raíz quadrada de um número é o mesmo que aquele número elevado a meio.\\
+	Vamos provar que isto é verdade.\\
+	Usando a propriedade de \emph{ potência de potência}, temos:
+	$$(a^{\frac{1}{2}})^2 = a^{\frac{1}{2} \cdot 2} = a^{\frac{2}{2}} = a^1 = a$$
+	Ou seja, $a^{\frac{1}{2}}$ é um número que multiplicado por ele mesmo (elevado ao quadrado) resulta no próprio a. Então, pela definição de raíz quadrada, $a^{\frac{1}{2}} = \sqrt{a}$.
+
+\newtheorem{teo}{Teorema}
+\begin{teo}[Inexistência de raíz de um número negativo]\ \ Se $a < 0$, então, não existe $\sqrt{a}$
+	\begin{proof}
+		Seja $a$ um número menor que zero. \\
+		Se a raíz de $a$ existir, teremos
+		$\sqrt{a} = b$, então $b^2 = a$ \\
+		mas todo número ao quadrado é maior que zero, então, $b^2$ não pode ser igual a $a$, ou seja, não é possível que exista $\sqrt{a}$.
+	\end{proof}
+\end{teo}
+
+\section{Raíz cúbica}
+	A raíz cúbica é muito parecida com a quadrada, também tem uma  interpretação geométrica (raíz cúbica de n pode ser entendida como o lado de um cubo de volume n) e também é bastante utilizada na matemática. \\
+
+\subsection{Definição}
+	Definimos a raíz cúbica de um número a com um número b, tal que se multiplicarmos b por b três vezes, obtemos a.\\
+	Ou seja,
+		$$ \sqrt[3]{a} = b  \Leftrightarrow b^3 = a$$
+	Por exemplo, \\
+		$\sqrt[3]{27} = 3$, pois $3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27$\\
+		$\sqrt[3]{125} = 5$, pois $5^3 = 125$\\
+		$\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$, pois $(\frac{1}{2})^3 = \frac{1}{2 \cdot 2 \cdot 2} = \frac{1}{8}$.\\
+\subsection{Propriedades da raíz cúbica}
+\textbf{A raíz cúbica de um número negativo}, ao contrário da raíz quadrada, existe.\\
+Tomemos como exemplo o número $-64$. A raíz cúbica de $-64$ é igual a $-4$, pois $(-4)^3 = (-4) \cdot (-4) \cdot (-4) = 16 \cdot (-4) = -64$. \\
+Veremos agora um teorema que diz que a raíz cúbica de um número é  igual aquele número elevado a um terço:\\
+\begin{teo}\ \ $\sqrt[3]{a} = a^{\frac{1}{3}}$
+	\begin{proof}
+		$$(a^{\frac{1}{3}})^3 = a^{\frac{1}{3} \cdot 3} = a^{\frac{3}{3}} = a^1 = a$$
+		Assim, $a^{\frac{1}{3}}$ é um número que se elevado ao cubo resulta em $a$, logo, é igual a raíz cúbica de $a$.
+	\end{proof}
+\end{teo}
+
+\section{Raíz n-ésima}
+	A raíz n-ésima é uma generalização das raízes quadradas e cúbicas. Isso quer dizer que, tudo o que estudaremos  nesta seção vale para raíz quadrada e para raíz cúbica (bastando trocar o n por 2 ou por 3).
+
+\subsection{Definição}
+	A raíz n-ésima de um número $a$ é  um número $b$, tal que se multiplicarmos  $b$ por $b$ $n$ vezes, obtemos o número $a$.  Em linguagem matemática:
+	$$\sqrt[n]{a} = b \Leftrightarrow b^n = a$$ 
+	Por exemplo,\\
+	$\sqrt[4]{16} = 2$, pois $2^4 = 2 \cdot 2 \cdot 2 \cdot 2 = 4 \cdot 2 \cdot 2 = 8 \cdot 2 = 16$\\
+	$\sqrt[5]{-243} = -3$, pois $(-3)^5 = -243$ \\
+	$\sqrt[3]{-1} = -1$, pois $(-1)^3 = -1$. \\
+
+\subsection{Propriedades da raíz n-ésima}
+\begin{teo}[Relação com potências racionais] A raíz n-ésima de um número x, maior ou igual a zero, é igual ax elevado a $\frac{1}{n}$.\\
+	\begin{proof}
+		$$ (x^{\frac{1}{n}})^n = x^{\frac{1}{n} \cdot n} = x^{\frac{n}{n}} = x^1 = x$$
+		Ou seja, $x^{\frac{1}{n}}$ é um número que elevado a $n$ resulta em $x$, logo, $x^{\frac{1}{n}}$ é igual a raíz n-ésima de $x$.
+	\end{proof}
+\end{teo}
+
+Note que quando $n = 2$ ou $n = 3$, caímos nos casos das raízes quadradas ou cúbicas que provamos acima. \\
+Este teorema nos diz que uma raíz pode ser escrita como uma potência. Isto é útil pelo fato de podermos usar todas as propriedades de potências estudadas no outro capítulo.\\
+Com o uso deste teorema e das propriedades de potências já estudadas, chegamos as seguintes propriedades para a operação de radiciação: \\
+\begin{description}
+\item[Produto de raízes] $\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a \cdot b}$ \\
+	Note que está propriedade é análoga a propriedade de produto de  potências. E, de fato, ela tem origem nesta propriedade, pois:
+	$$\sqrt[n]{a} \cdot \sqrt[n]{b} = a^{\frac{1}{n}} \cdot b^{\frac{1}{n}} = \sqrt[n]{a \cdot b}$$
+	
+\item[Raíz de uma potência] $\sqrt[n]{a^m} = a^{\frac{m}{n}} = (\sqrt[n]{a})^m$ \\
+	Prova: \\
+	$$\sqrt[n]{a^m} = \left(a^m \right)^{\frac{1}{m}} = a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right) ^m =   a^{\frac{m}{n}} = (\sqrt[n]{a})^m$$
+	Note que essa propriedade se assemelha apropriedade de potência de potência (e a utilizamos para chegar provar esta propriedade).
+
+
+
+\item[Quociente de raízes] Se $b$ é diferente de zero, então $\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}} $ \\
+	$$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \frac{a^{\frac{1}{n}}}{b^{\frac{1}{n}}} = a^{\frac{1}{n}} \cdot \left( \frac{1}{b} \right) ^ \frac{1}{n} = \left( a \cdot \frac{1}{b} \right) ^ {\frac{1}{n}} = \left( \frac{a}{b} \right) ^ {\frac{1}{n}} =  \sqrt[n]{\frac{a}{b}} $$
+	Precisamos tomar b diferente de zero pelo fato de não podermos dividir por zero.
+
+\item[Raíz de um] $\sqrt[n]{1} = 1$ \\
+	Prova:
+		$$1^n = \underbrace{1 \cdot 1 \cdot 1 \cdots 1}_{n \ vezes} = 1 $$
+	Portanto, 1 é a raíz n-ésima de 1, pois 1 elevado a n é igual a 1. \\
+	(Isso quer dizer que a raíz quadrada, a raíz cúbica, a raíz quarta ou qualquer outra raíz do 1 vale 1). \\
+
+	Como você viu, estas propriedades são análogas as propriedades de potências.
+	Sendo assim, não há a necessidade de decorá-las. Toda vez que vocâ quiser usar uma propriedade e não se lembrar, transforme a raíz em uma potência e use as propriedades de potência que você conhece. \\
+	Há outras propriedades, mas resolvi mostrar apenas estas, pois o objetivo é que você pense e consiga resolver os problemas sem ficar decorando várias fórmulas e propriedades. \\
+
+%%%%
+%% EXEMPLOS DE RADICIAÇÃO
+%%%%
+\subsection{Exemplos}
+\begin{enumerate}
+\item Calcular $ \sqrt[3]{27}  \cdot \sqrt[4]{625}$ . \\
+	Observe que $5^4 = 5 \cdot 5 \cdot 5 \cdot 5 =  625$ e que $3^3 = 3 \cdot 3 \cdot 3 = 27$, logo, a raíz cúbica de 27 é 3 e a raíz quarta de 625 é 5. Portanto, \\
+	$$ \sqrt[3]{27}  \cdot \sqrt[4]{625} = 3 \cdot 5 = 15$$
+
+\item Quanto vale $ \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} $ ? \\
+	Podemos usar a propriedade de produto de raíz para chegar na seguinte igualdade: \\
+		$$ \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{10 \cdot 2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{20}}{ \sqrt{20} \cdot \sqrt{2}} $$
+	Dividindo raíz de vinte por raíz de vinte e  usando a propriedade de quocientes, obtemos: \\
+		$$  \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{20}}{ \sqrt{20} \cdot \sqrt{2}} = \sqrt{\frac{8}{2}} = \sqrt{4} = 2$$
+	Portanto, aquela espressão vale dois.
+
+\item Mostre que $8^{0.333333333...}$ é igual a $2$ \\
+	Primeiro notemos que
+		$$ 0.333333... = \frac{1}{3} $$
+	Então,
+		$$ 8^{0.3333333...} = 8^{\frac{1}{3}} = \sqrt[3]{8} = 2$$
+\end{enumerate}
+\end{description}
+
+\section{Erros comuns}
+\begin{description}
+\item[Raíz quadrada de um número ao quadrado] \  Algumas pessoas, quando veem uma expressão como $\sqrt{7^2}$, gostam de ``cortar'' o quadrado de dentro da raíz (o expoente do sete) com o sinal da raíz, obtendo o resultado 7. \\
+	Neste caso ($7^2$), isso dá certo, mas se tomarmos $(-2)^2$? \\
+	Se cortássemos o expoente 2 com o sinal da raíz obterímos como resultado o valor $-2$. Mas isto está correto? \\
+	Vejamos:
+	$$\sqrt{(-2)^2} = \sqrt{(-2) \cdot (-2)} = \sqrt{4} = 2 $$
+	Ou seja, o resultado correto é $2$ e não $-2$. \\
+	Por que isto ocorre? Por que a regra de ``cortar'' deu certo com o 7, mas não deu certo com o -2? \\
+	Na verdade, com todo número maior ou igual a zero esta regra de ``cortar'' o sinal da raíz com o expoente 2 dá certo. Mas quando temos um número negativo, devemos retirar o sinal de menos do resultado ao ``cortar''. \\
+	Por exemplo: \\
+	$\sqrt{(-6)^2} = 6$ (retiramos o sinal de menos do -6).
+\end{description}
+
+\section{Exercícios}
+\begin{enumerate}
+\item Calcule os valores  das seguintes expressões:
+	%%%%%  Uma estrutura enumarate dentro de outra gera itens com letras ao invés de números
+	\begin{enumerate}
+		\item $\sqrt{81}$
+		\item $\sqrt[3]{125}$
+		\item $\sqrt{3} \cdot \sqrt{3}$
+		\item $\sqrt[3]{9} \cdot \sqrt[3]{81}$
+		\item $\frac{2^{\frac{1}{2}} \cdot \sqrt{3}}{\sqrt{216}} $
+		\item $\frac{\sqrt{3} + \sqrt{3}}{2} \cdot \frac{\sqrt{2}}{\sqrt{6}} $
+		\item $\frac{\sqrt{\sqrt[3]{\sqrt[3]{81} \cdot \sqrt[3]{81^2}}}}{3^{-\frac{1}{3}}} $
+		\item $\frac{\sqrt[6]{6^4} \cdot 6^{\frac{1}{2}}}{\sqrt[6]{6}} $
+		\item $\sqrt[1543]{1} $
+		\item $\sqrt[22]{-1} $
+		\item $\sqrt[271]{-1} $
+		\item $\sqrt[3]{-16 \cdot \sqrt{64}} $
+		\item $\sqrt[5]{179^5} + \sqrt[3]{-189^3} - \sqrt[7]{(-10)^7}  $
+		\item $\frac{\sqrt{\sqrt{\sqrt{3}}}}{\sqrt[8]{3}} - 4$
+		\item $\sqrt[142]{0} $
+		\item $\frac{\sqrt[3]{16} \cdot \sqrt{6} \cdot \sqrt[3]{4} \cdot \sqrt{\sqrt[3]{2 \cdot (2 + \sqrt{4})}}}{\sqrt{3}} $
+		\item $\sqrt{(-3)^2} $
+		\item $\sqrt[4]{(-4)^4} $
+		\item $\sqrt[3]{(-5)^3} + \left( \sqrt[3]{5} \right) ^3 $
+	\end{enumerate}
+
+\item Sabendo que $\beta ^ 5 = 2$, determine o valor da expressão
+     $$ \left(\sqrt{\beta} \cdot \sqrt[4]{\beta} \cdot \sqrt[8]{\beta} \cdot \sqrt[16]{\beta} \right)^{16} $$
+
+\item Quanto vale
+	$$\sqrt{ \sqrt[3]{3}} \cdot 3^{-\frac{1}{6}} + \left( \frac{4^{\frac{1}{3}}}{\sqrt[3]{2}} \right) ^3 - \frac{8^7}{(2^7)^3} $$
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,894 @@
+
+%% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre potenciação		%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}	% Começo do conteúdo.
+
+\title{Matemática para pré-vestibulandos (5.1)}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+\date{}
+\maketitle
+
+
+\chapter[Potenciação]{Potenciação}
+
+
+\section{Introdução}
+	De maneira geral, quando pensamos em potências, pensamos em um produto (uma multiplicação) efetuada várias vezes, como por exemplo,
+
+	 $$2^3 = 2\cdot2\cdot2 = 8$$
+
+	Isso é verdade em apenas alguns casos particulares, mas, se tomássemos, por exemplo, $2 ^ {3.5}$ (dois elevado a três e meio), então teríamos que multiplicar 2 por 2 três vezes e meia? Como fazemos isto? Esta expressão faz sentido?
+	E se tivéssemos que calcular $4^{-1}$ (quatro elevado a menos 1)? Teríamos que multiplicar 4 por ele próprio menos uma vez? Como?
+
+	Neste capítulo iremos responder algumas dessas perguntas e aprender a trabalhar com as potências.
+
+
+\section{Definição}
+	Potenciação (também conhecida como exponenciação) é uma operação matemática que envolve dois números \textbf{a} e \textbf{b}, representada por
+			$$a^b$$
+onde \textbf{ a} é chamado de \textbf{base} e \textbf{b} é chamado de \textbf{ expoente}. Esta operação é definida como segue:
+\\
+
+\textbf{\large expoente positivo:} \\
+Se ${b \in \{1, 2, 3, ...\}}$, ou seja, se b for um inteiro maior que zero, então
+		$$a ^ b = \underbrace{a \cdot a \cdot a \cdot ... \cdot a}_{b \ vezes}$$
+Por exemplo, para $a = 5$ e $b = 3$, temos, $a^b = 5^3 = 5 \cdot 5 \cdot 5 = 25 \cdot 5 = 125$. Ou seja, como 3 é um inteiro maior que zero, então basta multiplicarmos 5 por 5 três vezes.
+
+\textbf{\large expoente negativo:} \\
+Definimos uma potência com expoente negativo como:
+$$ a ^ {-b} = \frac{1}{a^{b}}$$
+ou seja, retiramos o sinal de menos do b e dividimos 1 por $a^b$.
+Por exemplo, se $a = 5$ e $b = -3$, temos, $a^b = 5^{-3} = \frac{1}{5^3} = \frac{1}{125} = 0.008$
+
+
+\textbf{Exemplos:} \\
+\begin{itemize}
+\item $2 ^ 4 = 2 \cdot 2 \cdot 2 \cdot 2 = 16$
+\item $(\frac{3}{2}) ^ 2 = \frac{3}{2} \cdot \frac{3}{2} = \frac{9}{4}$
+\item $(-6) ^ 2 = (-6) \cdot (-6) = 36$ (observe o uso da regra do sinal)
+\item $(1.2) ^ 3 = (1.2) \cdot (1.2) \cdot (1.2) = 1.728$
+\item $4 ^ {-2} = \frac{1}{4^2} = \frac{1}{16}$
+\item $(\frac{1}{2}) ^ {-3} = \frac{1}{\left( \frac{1}{2} \right)^3} = \frac{1}{\left(\frac{1}{8}\right)} = 8$
+\item $(-3) ^ {-3} = \frac{1}{3^3} = \frac{1}{(-3) \cdot (-3) \cdot (-3)} = -\frac{1}{27}$ (observe o uso da regra do sinal)
+\end{itemize}
+
+\section{Propriedades}
+	Nesta seção iremos provar algumas propriedades das potências. Elas são muito importante para facilitar os cálculos de expressões que envolvam potências. \\
+	Por exemplo, quanto vale $3^{-1}\cdot3^3\cdot(\frac{1}{3^2}) - 1789^0$? \\
+	Vamos tentar calcular este valor: \\
+	$$3^{-1}\cdot3^3\cdot(\frac{1}{3^2}) - 1789^0 = \frac{1}{3}\cdot27\cdot\frac{1}{9} - 1789^0$$
+	Agora teríamos que multiplicar as frações, depois dividir, resolver a fração resultante ($\frac{27}{27}$) e subtrair $1789^0$. Isso seria igual a $1 - 1789^0$...\\
+	Mas, quanto vale $1789^0$?\\
+	Ou seja, depois de todo esse trabalho ainda não conseguiríamos saber quanto vale aquela expressão.\\
+	Por isso, precisamos usar as propriedades que vamos aprender agora: \\
+\begin{description}
+%-------------  Propriedade 1
+\item[\underline{ Soma de expoentes:}] Se $n > 0$ e $m > 0$, então $a^n \cdot a^m = a^{n+m}$ 
+\\	\textbf{Prova:}  $a^n \cdot a^m = \underbrace {(a \cdot a \cdot a \cdots a)}_{n \  vezes} \cdot \underbrace {(a \cdot a \cdot a ... a)}_{m \  vezes} = \underbrace{a \cdot a \cdot \cdots a}_{n + m \ vezes} = a^{n + m} $
+%------------- Propriedade 2
+\item[\underline{ Subtração de expoentes:}] Se $a \ne 0$, então $\frac{a^n}{a^m} = a^{n - m}$
+\\	\textbf{Prova:} $$\frac{a^n}{a^m} = \frac{\overbrace{a \cdot a \cdot a \cdots a}^{n \ vezes}}{\underbrace{a \cdot a \cdot a \cdots a}_{m \ vezes}} \ \ \  \Leftrightarrow  separando \ os\ m\ primeiros\ termos\ do\ produto$$
+$\frac{a^n}{a^m} = \frac{\overbrace{a \cdot a \cdot a \cdots a}^{m \ vezes}}{\underbrace{a \cdot a \cdot a \cdots a}_{m \ vezes}} \cdot \frac {\overbrace{a \cdot a \cdot a \cdots a}^{n - m \ vezes}}{1}  \ \ \  \Leftrightarrow$ \ aplicando\ a\ definição\ de\ potência \\ \\
+$\frac{a^n}{a^m} $ \ \ $=$ \ \ $\frac{a^m}{a^m}\cdot  \frac{a^{n - m}}{1}  \Leftrightarrow$ \ \  $a^m$ sobre $a^m$  dá\ 1  \\ \\
+$\frac{a^n}{a^m} $  \ \ $=$ \ \ $1 \cdot a^{n - m} = a^{n - m}$ 
+\\
+
+%------------- Propriedade 3
+\item[\underline{ Potências de zero:}] Se $a \ne 0$, então $a^0 = 1$
+\\	\textbf{Prova:} \\ Primeiro note que pra todo número n, temos que $0 = n - n$ (ou seja, $2 - 2 = 0$, $3 - 3 = 0$, $4 - 4 = 0$ e assim sucessivamente). \\
+	Então, \\
+	\ $a^0 = a^{n - n}  \Leftrightarrow$  \ \ \ usando o propriedade de subtração de expoentes \\
+	\ $a^0 = \frac{a^n}{a^n} = 1 $ \\
+
+%------------- Propriedade 4
+\item[\underline{ Produto de potências:}] $(a^n)\cdot(b^n) = (a \cdot b)^n$
+\\	\textbf{Prova:} 
+	$$(a^n) \cdot (b^n) = \underbrace {(a \cdot a \cdot a \cdots a)}_{n \ vezes} \cdot \underbrace {(b \cdot b \cdot b \cdots b)}_{n \ vezes} \Leftrightarrow \ \ reordenando\ os\ termos$$
+	$(a^n) \cdot (b^n) = \underbrace {(a \cdot b) \cdot (a \cdot b) \cdots (a \cdot b)}_{n \ vezes} \Leftrightarrow$ \ \ pela definição de  potência  \\ \\
+	$(a^n) \cdot (b^n) = (a \cdot b) ^  n $
+
+%------------- Propriedade 5
+\item[\underline{ Quociente de potências:}]  Se $b \ne 0$,  então, $\frac{a^n}{b^n} = (\frac{a}{b})^n$
+\\	\textbf{Prova:} \\
+	$\frac{a^n}{b^n} = a^n \cdot \frac{1}{b^n} = a^n \cdot (\frac{1}{b})^n \Leftrightarrow $  \ Pela propriedade anterior  \\ \\
+	$\frac{a^n}{b^n} = (a \cdot \frac{1}{b})^ n = (\frac{a}{b})^n$ \\
+	Note que, nesta prova, usamos o fato de que $\frac{1}{b^n} = (\frac{1}{b})^n$.  Você consegue dizer por que isto é  verdade? \\
+
+%------------- Propriedade 6
+\item[\underline{ Potência de potência:}]  $(a^m)^n = a^{m \cdot n}$
+\\	\textbf{Prova:} \\
+	$$(a^m)^n = \underbrace{(a^m)\cdot (a^m)\cdots (a^m)}_{n \ vezes} $$
+	Usando a propriedade de soma dos expoentes, teremos
+	$$(a^m)^n = a^{\overbrace{m + m + m + ... + m}^{n \ somas}} =  a^{m \cdot n}$$
+
+%------------- Propriedade 7
+\item[\underline{ Potência de expoente par:}] Seja $n$ um inteiro par. Então $(-a)^n = a^n$.
+\\	\textbf{Prova:} \\
+	Primeiro, note que se um número $n$ é par, então ele pode ser escrito como $2k$, para algum $k$.\\
+	Por exemplo, $4 = 2 \cdot 2$, $8 =  2 \cdot 4$, $20 = 2 \cdot 10$, $-14 = 2 \cdot (-7)$, etc.
+	Então, tomando $n = 2 \cdot k$, temos que, \\
+	$ (-a)^n = (-a)^{2 \cdot k} \ \ \Leftrightarrow \ \ $ usando a propriedade de potência de potência \\
+	$ (-a)^n = [(-a)^2]^k  \ \Leftrightarrow \ \ $ como $(-a)^2 = a^2$ (regra do sinal) \\
+	$ (-a)^n = (a^2)^k  \ \ \ \ \ \Leftrightarrow \ \ $ novamente, propriedade de potência de potência \\
+	$ (-a)^n = a^{2 \cdot k}  = a^n$
+\end{description}
+
+%%%%%%%
+%%  Exemplos de usos das propriedades
+\section{Exemplos}
+\begin{enumerate}
+\item Calcular $(3^2 \cdot 3^{-2})^3$ \\
+	Usando a propriedade de soma de expoentes, temos que \\
+	$(3^2 \cdot 3^{-2})^3 = (3^{2 - 2})^3 \ \ \ \Leftrightarrow$ como $2 - 2 = 0$  \\
+	$(3^2 \cdot 3^{-2})^3 = (3^0)^3 \ \ \ \ \ \ \Leftrightarrow$ como $3^0 = 1$  \\
+	$(3^2 \cdot 3^{-2})^3 = 1^3 = 1$
+
+\item Seja $ y = \frac{(-2)^8 \cdot 4^4}{(8^2) \cdot 2^{12}}$. É verdade que $y$ é maior que 2? \\
+	Levando em consideração que $(-2)^8 = 2^8$ (propriedade de expoente par), temos \\
+	$ y = \frac{2^8 \cdot 4^4}{(8^2) \cdot 2^{12}} \Leftrightarrow $ como  $4 = 2^2$ \\  \\
+	$ y = \frac{2^8 \cdot (2^2)^4}{(8^2) \cdot 2^{12}} \Leftrightarrow $ como $8 = 2^3$ \\ \\
+	$ y = \frac{2^8 \cdot (2^2)^4}{[(2^3)^2] \cdot 2^{12}} \ \ \Leftrightarrow $ propriedade de potência de potência \\ \\
+	$y =\frac{2^8 \cdot 2^8}{(2^6) \cdot 2^{12}} \ \ \ \ \Leftrightarrow $ propriedade de soma de expoentes \\ \\
+	$ y = \frac{2^{8+8}}{2^{6+12}} \ \ \ \ \ \ \Leftrightarrow $  efetuando as somas \\ \\
+	$ y = \frac{2^{16}}{2^{18}} \ \ \ \ \ \ \ \  \Leftrightarrow $ subtraindo os expoentes \\ \\
+	$ y = 2^{-2} \ \ \ \ \ \ \ \  \Leftrightarrow  $ \ \ definição de  potência \\ \\
+	$ y = \frac{1}{4} = 0.25$ \\ \\
+	Sendo assim, $y < 2$, ou seja, não é verdade que $y > 2$.
+\end{enumerate}
+
+%%%%%%  
+%% Seção para sanar erros comuns
+
+\section{Erros comuns}
+Tome cuidado para não cometer estes erros:\\
+\begin{description}
+\item[Sinal da base]
+	Tome muito o cuidade de verificar se o sinal está incluido na base ou não. Por exemplo: \\
+	$-3^2 = - (3)\cdot(3) = -9$, ou seja, neste caso temos ``menos quadrado de três'', a base é 3 e não -3.
+\\ Mas, \\
+	$(-3)^2 = (-3) \cdot (-3) = 9$, pois temos ``o quadrado de menos três'', ou seja, a base é -3.
+\item[Multplicar expoentes]
+	Tome cuidado ao usar a propriedade $(a^m)^n = a^{m \cdot n}$.
+	\\ Note o seguinte:\\
+	$2^{3^2}$ é o mesmo que ``dois elevado a ao quadrado de três'', que dá \\ $2^9 = 512$ (se usássemos a regra de multiplicação dos expoentes, obteríamos $2^{3^2} = 2^{3\cdot2} = 2^6 = 64$, o que é errado, já que o resultado correto é 512).
+	\\	Porém, $(2^3)^2$ é o mesmo que ``o quadrado de dois ao cubo'', que dá $(2\cdot2\cdot2)^2 = 8^2 = 64$.\\
+		Observe que neste caso poderíamos usar a propriedade de multiplicar os expoentes (teríamos $(2^3)^2 = 2^{3\cdot2} = 2^6 = 64$).
+
+\item[Quadrado da soma]
+	 Outro erro comum é achar que o quadrado de uma soma é igual a soma dos quadrados.
+	\\	Por exemplo:\\
+	$(a + b)^2 = a^2 + b^2$ .......  \textbf{ERRADO}. \\
+	$(a + b)^2 = (a + b)\cdot(a + b) = a^2 + 2 \cdot a b + b^2$ ....... \textbf{CORRETO}. \\
+	Temos que multiplicar a expressão entre parênteses por ela própria fazendo a distributiva (veja a parte de fatoração para mais detalhes sobre este exemplo).
+
+\item[Expoente negativo]
+	Em uma potência com \textbf{expoente negativo}, quando retiramos o sinal de menos do expoente, não o colocamos na frente do resultado.\\
+	\begin{description}
+	\item[ERRADO   ):] $2^{-3} = - 2^3 = -8$
+	\item[ERRADO   $|$:] $2^{-3} = - \frac{1}{2^3} = - \frac{1}{8}$
+	\item[CORRETO  (:] $2^{-3} = \frac{1}{2^3} = \frac{1}{8}$
+	\end{description}
+
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	Seção de exercícios
+%%%%%%%%%%%%
+
+\section {Exercícios}
+
+\begin{enumerate}
+% exercício um
+\item Calcule as seguintes expressões envolvendo potências:
+	\begin{description}	
+	\item[a.] $3^1 + 3^{-1} - \frac{3}{9}$
+	\item[b.] $\frac{2^{3+2}}{2^3} \cdot \frac{1}{2} $
+	\item[c.] $\frac{5^{25}}{125 \cdot 125 \cdot 5^{20}} \cdot 5 - 17923^0$
+	\item[d.] $(-2)^3 \cdot (\frac{3}{2})^2$
+	\item[e.] $\frac{1}{3^{-3}}$
+	\item[f.] $\frac{3^2 \cdot 4^4}{2^8 \cdot 9^1} - \frac{6^3}{2^3 \cdot 3^3}$
+	\item[g.] $\frac{1978^1}{235817^0} - \frac{1978^5}{1978^2 \cdot 1978^2}$
+	\item[h.] $(2^5 \cdot 2^{-3}) \cdot 2^{-5} \cdot (-2)^2$
+	\item[i.] $\frac{(3 + 2)^5}{5^3} - 10^1 \cdot 10^0 - 5^2 + 25$
+	\item[j.] $\left[\left(- \frac{2}{3} \right)^3 \cdot \left(\frac{6}{2} \right)^{-3} \cdot \left(\frac{2}{6} \right)^{-6} \cdot (-1) \right]^{1978}$
+	\item[k.] $3^2 \cdot \frac{(7^9 + 6 \cdot 7^9)}{7^8} \cdot (\frac{1}{7}) ^ 2 \cdot 3^{-1} \cdot \frac{1}{7^{-1}} $
+	\item[l.] $\left( 2^{3^2} \cdot 2 -\frac{1024^{10}}{(2^{10})^9} \right) \cdot 67$
+	\end{description}
+% exercício 2
+\item Em um tempo remoto, um sábio salvou um rei usando de sua inteligência para montar uma ótima estratégia de guerra. O rei, para agradecer este feito, disse ao sábio que lhe daria o que quisesse. Então, o sábio pediu ao rei que pegasse um tabuleiro de xadrez e colocasse dois gramas de ouro na primeira casa, quatro na segunda, oito na terceira, e assim sucessivamente, sempre dobrando a quantidade, e no fim desse a ele a quantidade de ouro que estivesse no tabuleiro.
+\\ O rei achou muito pouco, mas resolveu atender o pedido.
+\\ Você acha que o rei conseguiu fazer o que o sábio pediu? Por que?
+\\ (Observação: um tabuleiro de xadrez tem 64 casas).
+
+%exercício 3
+\item Sabendo que $(x + 2)^2 = 2$, quanto vale $\left[ 2 \cdot (x + 2)\right] ^ {10} \cdot \left( \frac{1}{4^4} \right)^2$?
+
+%exercício 4
+\item Se $x \in \mathbb{R}$, tal que $0 < x < 1$ (ou seja, x é um número real, maior que zero e menor que 1), então a expressão $x^n$ fica cada vez mais próxima de que número quando tomamos valores grandes de n?
+\\ (Dica: avalie a expressão para $n = 2$, depois para $n = 3$, depois para valores maiores de n e tente observar os  resultados). 
+\end{enumerate}
+
+
+
+\chapter[Radiciação]{Radiciação}
+
+
+\section{Introdução}
+	No ano de 1202, um matemático italiano chamado \emph{ Leonardo Fibonacci} escreveu, em seu livro ``\emph{ Líber Abbaci}''\footnote{Este livro é muito importante na história da  matemática e da humanidade. Ele foi uma das principais influencias para que os europeus parassem de utilizar os algarismos romanos  e  passassem a ultilizar os algarismos arábicos (0,1,2,4,5,6,7,8,9)} (o livro foi escrito em latim. Uma boa tradução é "Livro do Cálculo") a seguinte frase: \\
+	\begin{quote} 
+		``Radix quadratum 16 aequalis 4''
+	\end{quote}
+	Ela pode ser traduzida como ``\emph{o lado de um quadrado de 16 é igual a 4}''. O que ele queria dizer é que, se um quadrado tem uma área igual a 16, então o lado desse quadrado é igual a  4. \\
+	As pessoas passaram a escrever \emph{ radix quadratum n} para se referir ao lado  de um quadrado de área igual a n. Depois, com o passar do tempo, estavam escrevendo simplesmente \emph{ radix n}. O tempo foi passando e se tornou comum escrever somente $rn$. \\
+	Com o passar do tempo (e a ajuda da caligrafia ruim das pessoas) esse $r$ foi mudando até virar o símbolo tão conhecido por todos, que é
+	$$ \sqrt{n} $$
+
+ 	É daí que vem o nome da famosa operação \emph{ raíz quadrada}. \\
+	O que a expressão $\sqrt{n}$ diz então, é: \emph{ qual é o lado de uma quadrado que tem área igual a $n$?}.
+\\	Com a evolução da matemática, este conceito foi generalizado, e hoje temos também raíz cúbica,  raíz quarta, e assim por diante.
+\\	Neste capítulo vamos estudar essas operações, suas propriedades e suas relações com a potênciação.
+	Esta área da matemática, que estuda as operações de raízes quadradas, cúbicas e todas as outras, se chama \emph{ radiciação}.
+	Neste capítulo e no restante do  livro, assumiremos que as \textbf{ propriedades de potências com expoentes inteiros valem também para expoentes racionais}\footnote{Na verdade aquelas propriedades demonstradas no capítulo de Potenciação valem para qualquer expoente real, mas, infelizmente, para provarmos que isto é verdade temos que usar conhecimentos avançados de matemática}. Com isso, podemos fazer, por exemplo, $2^{1/2} \cdot 2^{1/2} = 2^{1/2 + 1/2} = 2^1$.
+
+\section{Raíz quadrada}
+	A raíz quadrada é o caso mais simples da radiciação. Tem uma interpretação geométrica (como descrito na introdução) e é bastante utilizada, pricipalmente pelo fato de ser necessária para resolver \emph{ equações de segundo grau}.
+\subsection{Definição}
+	Definimos a raíz quadrada de um número a como um número b, maior ou igual a zero, tal que o multiplicando-se b por b obtemos a. \\
+	Ou seja,
+		$$ \sqrt{a} = b \Leftrightarrow b^2 = a$$
+	Por exemplo, \\ $\sqrt{9} = 3$, pois $3^2 = 3 \cdot 3 = 9$; \\
+		$\sqrt{121} = 11$,  pois  $11^2 =  121$.
+\subsection{Propriedades da raíz quadrada}
+\textbf{ $\sqrt{a} = a^{\frac{1}{2}}$} \\
+	O que esta propriedade nos diz é que a raíz quadrada de um número é o mesmo que aquele número elevado a meio.\\
+	Vamos provar que isto é verdade.\\
+	Usando a propriedade de \emph{ potência de potência}, temos:
+	$$(a^{\frac{1}{2}})^2 = a^{\frac{1}{2} \cdot 2} = a^{\frac{2}{2}} = a^1 = a$$
+	Ou seja, $a^{\frac{1}{2}}$ é um número que multiplicado por ele mesmo (elevado ao quadrado) resulta no próprio a. Então, pela definição de raíz quadrada, $a^{\frac{1}{2}} = \sqrt{a}$.
+
+\newtheorem{teo}{Teorema}
+\begin{teo}[Inexistência de raíz de um número negativo]\ \ Se $a < 0$, então, não existe $\sqrt{a}$
+	\begin{proof}
+		Seja $a$ um número menor que zero. \\
+		Se a raíz de $a$ existir, teremos
+		$\sqrt{a} = b$, então $b^2 = a$ \\
+		mas todo número ao quadrado é maior que zero, então, $b^2$ não pode ser igual a $a$, ou seja, não é possível que exista $\sqrt{a}$.
+	\end{proof}
+\end{teo}
+
+\section{Raíz cúbica}
+	A raíz cúbica é muito parecida com a quadrada, também tem uma  interpretação geométrica (raíz cúbica de n pode ser entendida como o lado de um cubo de volume n) e também é bastante utilizada na matemática. \\
+
+\subsection{Definição}
+	Definimos a raíz cúbica de um número a com um número b, tal que se multiplicarmos b por b três vezes, obtemos a.\\
+	Ou seja,
+		$$ \sqrt[3]{a} = b  \Leftrightarrow b^3 = a$$
+	Por exemplo, \\
+		$\sqrt[3]{27} = 3$, pois $3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27$\\
+		$\sqrt[3]{125} = 5$, pois $5^3 = 125$\\
+		$\sqrt[3]{\frac{1}{8}} = \frac{1}{2}$, pois $(\frac{1}{2})^3 = \frac{1}{2 \cdot 2 \cdot 2} = \frac{1}{8}$.\\
+\subsection{Propriedades da raíz cúbica}
+\textbf{A raíz cúbica de um número negativo}, ao contrário da raíz quadrada, existe.\\
+Tomemos como exemplo o número $-64$. A raíz cúbica de $-64$ é igual a $-4$, pois $(-4)^3 = (-4) \cdot (-4) \cdot (-4) = 16 \cdot (-4) = -64$. \\
+Veremos agora um teorema que diz que a raíz cúbica de um número é  igual aquele número elevado a um terço:\\
+\begin{teo}\ \ $\sqrt[3]{a} = a^{\frac{1}{3}}$
+	\begin{proof}
+		$$(a^{\frac{1}{3}})^3 = a^{\frac{1}{3} \cdot 3} = a^{\frac{3}{3}} = a^1 = a$$
+		Assim, $a^{\frac{1}{3}}$ é um número que se elevado ao cubo resulta em $a$, logo, é igual a raíz cúbica de $a$.
+	\end{proof}
+\end{teo}
+
+\section{Raíz n-ésima}
+	A raíz n-ésima é uma generalização das raízes quadradas e cúbicas. Isso quer dizer que, tudo o que estudaremos  nesta seção vale para raíz quadrada e para raíz cúbica (bastando trocar o n por 2 ou por 3).
+
+\subsection{Definição}
+	A raíz n-ésima de um número $a$ é  um número $b$, tal que se multiplicarmos  $b$ por $b$ $n$ vezes, obtemos o número $a$.  Em linguagem matemática:
+	$$\sqrt[n]{a} = b \Leftrightarrow b^n = a$$ 
+	Por exemplo,\\
+	$\sqrt[4]{16} = 2$, pois $2^4 = 2 \cdot 2 \cdot 2 \cdot 2 = 4 \cdot 2 \cdot 2 = 8 \cdot 2 = 16$\\
+	$\sqrt[5]{-243} = -3$, pois $(-3)^5 = -243$ \\
+	$\sqrt[3]{-1} = -1$, pois $(-1)^3 = -1$. \\
+
+\subsection{Propriedades da raíz n-ésima}
+\begin{teo}[Relação com potências racionais] A raíz n-ésima de um número x, maior ou igual a zero, é igual ax elevado a $\frac{1}{n}$.\\
+	\begin{proof}
+		$$ (x^{\frac{1}{n}})^n = x^{\frac{1}{n} \cdot n} = x^{\frac{n}{n}} = x^1 = x$$
+		Ou seja, $x^{\frac{1}{n}}$ é um número que elevado a $n$ resulta em $x$, logo, $x^{\frac{1}{n}}$ é igual a raíz n-ésima de $x$.
+	\end{proof}
+\end{teo}
+
+Note que quando $n = 2$ ou $n = 3$, caímos nos casos das raízes quadradas ou cúbicas que provamos acima. \\
+Este teorema nos diz que uma raíz pode ser escrita como uma potência. Isto é útil pelo fato de podermos usar todas as propriedades de potências estudadas no outro capítulo.\\
+Com o uso deste teorema e das propriedades de potências já estudadas, chegamos as seguintes propriedades para a operação de radiciação: \\
+\begin{description}
+\item[Produto de raízes] $\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a \cdot b}$ \\
+	Note que está propriedade é análoga a propriedade de produto de  potências. E, de fato, ela tem origem nesta propriedade, pois:
+	$$\sqrt[n]{a} \cdot \sqrt[n]{b} = a^{\frac{1}{n}} \cdot b^{\frac{1}{n}} = \sqrt[n]{a \cdot b}$$
+	
+\item[Raíz de uma potência] $\sqrt[n]{a^m} = a^{\frac{m}{n}} = (\sqrt[n]{a})^m$ \\
+	Prova: \\
+	$$\sqrt[n]{a^m} = \left(a^m \right)^{\frac{1}{m}} = a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right) ^m =   a^{\frac{m}{n}} = (\sqrt[n]{a})^m$$
+	Note que essa propriedade se assemelha apropriedade de potência de potência (e a utilizamos para chegar provar esta propriedade).
+
+
+
+\item[Quociente de raízes] Se $b$ é diferente de zero, então $\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}} $ \\
+	$$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \frac{a^{\frac{1}{n}}}{b^{\frac{1}{n}}} = a^{\frac{1}{n}} \cdot \left( \frac{1}{b} \right) ^ \frac{1}{n} = \left( a \cdot \frac{1}{b} \right) ^ {\frac{1}{n}} = \left( \frac{a}{b} \right) ^ {\frac{1}{n}} =  \sqrt[n]{\frac{a}{b}} $$
+	Precisamos tomar b diferente de zero pelo fato de não podermos dividir por zero.
+
+\item[Raíz de um] $\sqrt[n]{1} = 1$ \\
+	Prova:
+		$$1^n = \underbrace{1 \cdot 1 \cdot 1 \cdots 1}_{n \ vezes} = 1 $$
+	Portanto, 1 é a raíz n-ésima de 1, pois 1 elevado a n é igual a 1. \\
+	(Isso quer dizer que a raíz quadrada, a raíz cúbica, a raíz quarta ou qualquer outra raíz do 1 vale 1). \\
+
+	Como você viu, estas propriedades são análogas as propriedades de potências.
+	Sendo assim, não há a necessidade de decorá-las. Toda vez que vocâ quiser usar uma propriedade e não se lembrar, transforme a raíz em uma potência e use as propriedades de potência que você conhece. \\
+	Há outras propriedades, mas resolvi mostrar apenas estas, pois o objetivo é que você pense e consiga resolver os problemas sem ficar decorando várias fórmulas e propriedades. \\
+
+%%%%
+%% EXEMPLOS DE RADICIAÇÃO
+%%%%
+\subsection{Exemplos}
+\begin{enumerate}
+\item Calcular $ \sqrt[3]{27}  \cdot \sqrt[4]{625}$ . \\
+	Observe que $5^4 = 5 \cdot 5 \cdot 5 \cdot 5 =  625$ e que $3^3 = 3 \cdot 3 \cdot 3 = 27$, logo, a raíz cúbica de 27 é 3 e a raíz quarta de 625 é 5. Portanto, \\
+	$$ \sqrt[3]{27}  \cdot \sqrt[4]{625} = 3 \cdot 5 = 15$$
+
+\item Quanto vale $ \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} $ ? \\
+	Podemos usar a propriedade de produto de raíz para chegar na seguinte igualdade: \\
+		$$ \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{10 \cdot 2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{20}}{ \sqrt{20} \cdot \sqrt{2}} $$
+	Dividindo raíz de vinte por raíz de vinte e  usando a propriedade de quocientes, obtemos: \\
+		$$  \frac{\sqrt{8} \cdot \sqrt{10} \cdot \sqrt{2}}{ \sqrt{20} \cdot \sqrt{2}} = \frac{\sqrt{8} \cdot \sqrt{20}}{ \sqrt{20} \cdot \sqrt{2}} = \sqrt{\frac{8}{2}} = \sqrt{4} = 2$$
+	Portanto, aquela espressão vale dois.
+
+\item Mostre que $8^{0.333333333...}$ é igual a $2$ \\
+	Primeiro notemos que
+		$$ 0.333333... = \frac{1}{3} $$
+	Então,
+		$$ 8^{0.3333333...} = 8^{\frac{1}{3}} = \sqrt[3]{8} = 2$$
+\end{enumerate}
+\end{description}
+
+\section{Erros comuns}
+\begin{description}
+\item[Raíz quadrada de um número ao quadrado] \  Algumas pessoas, quando veem uma expressão como $\sqrt{7^2}$, gostam de ``cortar'' o quadrado de dentro da raíz (o expoente do sete) com o sinal da raíz, obtendo o resultado 7. \\
+	Neste caso ($7^2$), isso dá certo, mas se tomarmos $(-2)^2$? \\
+	Se cortássemos o expoente 2 com o sinal da raíz obterímos como resultado o valor $-2$. Mas isto está correto? \\
+	Vejamos:
+	$$\sqrt{(-2)^2} = \sqrt{(-2) \cdot (-2)} = \sqrt{4} = 2 $$
+	Ou seja, o resultado correto é $2$ e não $-2$. \\
+	Por que isto ocorre? Por que a regra de ``cortar'' deu certo com o 7, mas não deu certo com o -2? \\
+	Na verdade, com todo número maior ou igual a zero esta regra de ``cortar'' o sinal da raíz com o expoente 2 dá certo. Mas quando temos um número negativo, devemos retirar o sinal de menos do resultado ao ``cortar''. \\
+	Por exemplo: \\
+	$\sqrt{(-6)^2} = 6$ (retiramos o sinal de menos do -6).
+\end{description}
+
+\section{Exercícios}
+\begin{enumerate}
+\item Calcule os valores  das seguintes expressões:
+	%%%%%  Uma estrutura enumarate dentro de outra gera itens com letras ao invés de números
+	\begin{enumerate}
+		\item $\sqrt{81}$
+		\item $\sqrt[3]{125}$
+		\item $\sqrt{3} \cdot \sqrt{3}$
+		\item $\sqrt[3]{9} \cdot \sqrt[3]{81}$
+		\item $\frac{2^{\frac{1}{2}} \cdot \sqrt{3}}{\sqrt{216}} $
+		\item $\frac{\sqrt{3} + \sqrt{3}}{2} \cdot \frac{\sqrt{2}}{\sqrt{6}} $
+		\item $\frac{\sqrt{\sqrt[3]{\sqrt[3]{81} \cdot \sqrt[3]{81^2}}}}{3^{-\frac{1}{3}}} $
+		\item $\frac{\sqrt[6]{6^4} \cdot 6^{\frac{1}{2}}}{\sqrt[6]{6}} $
+		\item $\sqrt[1543]{1} $
+		\item $\sqrt[22]{-1} $
+		\item $\sqrt[271]{-1} $
+		\item $\sqrt[3]{-16 \cdot \sqrt{64}} $
+		\item $\sqrt[5]{179^5} + \sqrt[3]{-189^3} - \sqrt[7]{(-10)^7}  $
+		\item $\frac{\sqrt{\sqrt{\sqrt{3}}}}{\sqrt[8]{3}} - 4$
+		\item $\sqrt[142]{0} $
+		\item $\frac{\sqrt[3]{16} \cdot \sqrt{6} \cdot \sqrt[3]{4} \cdot \sqrt{\sqrt[3]{2 \cdot (2 + \sqrt{4})}}}{\sqrt{3}} $
+		\item $\sqrt{(-3)^2} $
+		\item $\sqrt[4]{(-4)^4} $
+		\item $\sqrt[3]{(-5)^3} + \left( \sqrt[3]{5} \right) ^3 $
+	\end{enumerate}
+
+\item Sabendo que $\beta ^ 5 = 2$, determine o valor da expressão
+     $$ \left(\sqrt{\beta} \cdot \sqrt[4]{\beta} \cdot \sqrt[8]{\beta} \cdot \sqrt[16]{\beta} \right)^{16} $$
+
+\item Quanto vale
+	$$\sqrt{ \sqrt[3]{3}} \cdot 3^{-\frac{1}{6}} + \left( \frac{4^{\frac{1}{3}}}{\sqrt[3]{2}} \right) ^3 - \frac{8^7}{(2^7)^3} $$
+\end{enumerate}
+
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre fatoração		%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Fatoração]{Fatoração}
+
+
+\section{Introdução}
+	Muitas vezes nos deparamos com expressões matemáticas que nos parecem muito ``feias'', no sentido de que parece muito difícil calcular o seu valor ou manipulá-las.
+	Mas, em vários casos, é possível reescrever a expressão de uma forma que seja  mais agradável ou conveniente. Uma destas formas é a forma fatorada, que vamos ver agora.
+
+\section{Definição}
+	Fatoração é o nome que se dá aos métodos ou ao processo de reescrever uma expressão como uma expressão na forma de produtos. \\
+	Ou seja, fatorar uma  expressão é deixá-lá na forma 
+		$$ e_1 \cdot e_2 \cdot e_3 \cdots e_n  $$
+	onde cada $e_i$ (com $i=1,2,3,4,...,n$) é uma outra expressão.\\
+	Chamamos cada $e_i$ de fator. \\
+	Por exemplo, a expressão $11 \cdot x + 11 \cdot y$ pode ser reescrita como $ 11 \cdot (x + y)$. Está  forma consiste em um produto entre o 11 e o $(x + y)$, então, esta é a forma fatorada dela. Note que ela tem dois fatores. \\
+
+\section{Técnicas de fatoração}
+	Apresentamos, a  seguir, algumas técnicas de fatoração:
+\begin{description}
+\item[Fator comun em evidência] Trata-se de observar um valor que aparece mais  de uma vez em uma expressão e reescrever a expressão como um produto deste valor e de uma outra expressão, tal que, feita a distributiva, obtenha-se novamente a expressão original. \\
+	Por exemplo:\\
+	Na expressão $13x +  xn $, vemos que o $x$ aparece duas vezes, logo, podemos colocá-lo em evidência e obter a expressão $x \cdot (13 + n)$. \\
+	Note que se fizermos a distributiva, obteremos novamente a expressão original. \\
+	Como outro exemplo, veja que colocando o $a$ e o $-b$ em evidência, chegamos a seguinte e igualdade:
+	$$ ax + ya - xb - yb = a \cdot (x + y) -b \cdot (x + y)  $$
+	então, podemos tirar o $(x + y)$ em evidência e obter
+	$$  ax + ya - xb - yb = (x + y) \cdot (a - b) $$
+	
+
+\item[Trinômio quadrado perfeito]. É uma forma de fatorar expressões que têm uma forma bem particular, porém, bem comum, principalmente entre exercícios de ensino médio e vestibular. Observe que:
+	$$ (a + b)^2 = (a + b) \cdot (a + b) = a \cdot (a + b) + b \cdot (a + b) = a^2 + a \cdot b + b \cdot a + b^2 = a^2 + 2 \cdot a \cdot b + b^2$$
+	Então, uma expressão do tipo $a^2 + 2 \cdot a \cdot b + b^2$ pode ser reescrita como $(a + b)^2$, que é sua forma fatorada. \\
+	O análogo acontece para o caso da diferença entre $a$ e $b$:
+	$$ (a - b)^2 = (a - b) \cdot (a - b) = a \cdot (a - b) - b \cdot (a - b) = a^2 - ab - ba + b^2 = a^2 - 2ab + b^2$$
+
+\item[Diferença de quadrados]. Também se trata de uma expressão com uma forma bem particular, mas que é bastante comum. Veja que,
+	$$ (a + b) \cdot (a - b) = a \cdot (a - b) + b \cdot (a - b) = a^2 - ab + ba - b^2 = a^2 + 0 + b^2 = a^2 + b^2$$
+	Logo, uma expressão da forma $a^2 - b^2$ pode ser fatorada em um produto com os seguintes termos: $(a + b) \cdot (a - b)$.
+
+
+\end{description}
+
+
+%%%%
+%% EXEMPLOS DE FATORAÇÃO
+%%%%
+\subsection{Exemplos}
+\begin{enumerate}
+\item Fatorar a expressão $36 + 12x + x^2$.\\
+	Note que esta expressão pode ser reescrita como $6^2 + 2 \cdot 6 \cdot x + x^2$ e que ela coincide com a forma de uma trinômio quadrado perfeito (com $a = 6$ e $b = x$), portanto,
+	$$36 + 12x + x^2 = (6 + x)^2$$
+	(Faça a distributiva para verificar a corretude).
+
+\item Fatorar a expressão $xy^2 +  xa^2 - 2xay$. \\
+	Colocando $x$ em evidência e usando a forma do trinômio perfeito, chegamos em
+	$$xy^2 +  xa^2 - 2xay = x \cdot (y^2 + a^2 -2ay) = x \cdot (y^2 - 2ya + a^2) = x \cdot (y - a)^2$$
+
+\item Fatorar a expressão $3x^2 + 6x + 7xy + 14y$. \\
+	Colocando $3x$ e $7y$ em evidência, chegamos a seguinte igualdade:
+	$$3x^2 + 6x + 7xy + 14y = 3x \cdot (x + 2) + 7y \cdot (x + 2) $$
+	Colocando $(x + 2)$ em evidência, chegamos em
+	$$3x^2 + 6x + 7xy + 14y = (x + 2) \cdot (3x + 7y)$$
+
+\item Fatorar a expressão $9x^2 - 4$. \\
+	Esta expressão envolve apenas uma diferença de dois elementos, além disso, há um $x$ elevado ao quadrado, isto sugere que ele pode ser fatorada como uma diferença de quadrados. \\
+	De fato, notando que $9x^2 = (3x)^2$ e que $4 = 2^2$, vemos que
+	$$ 9x^2 - 4 = (3x)^2 - 2^2 = (3x + 2) \cdot (3x -2)$$
+
+\item Se $a - b = 4$ e $a \cdot b = 6$, então, quanto vale $a^2 + b^2$? \\
+	Como somar com zero não muda o valor da expressão, podemos escrever: \\
+	$a^2 + b^2 = a^2 + b^2 + 0 \ \ \ \ \  \ \ \ \ \ \   \Leftrightarrow$ \ \ Como $-2ab + 2ab = 0$ \\
+	$a^2 + b^2 = a^2 - 2ab + b^2 + 2ab \Leftrightarrow$ \  Trinômio do quadrado perfeito\\
+	$a^2 + b^2 = (a - b)^2 + 2ab \ \ \ \ \ \ \  \Leftrightarrow$ \ Substituindo os valores dados \\
+	$a^2 + b^2 = (4)^2 + 2 \cdot 6 = 16 + 12 = 28$
+
+\end{enumerate}
+
+\pagebreak
+
+\section{Exercícios}
+\begin{enumerate}
+\item Fatore as seguintes expressões:
+	\begin{enumerate}
+		\item  $x^2 - 2^2$
+		\item  $x^2  + xy + x$
+		\item  $y^2  - 1$
+		\item  $3x^3 + 2x^2 -3x -2$
+		\item  $x^2 - w^2 -x +w$
+		\item  $ax + x^2 + 2xy + ay +y^2$
+		\item  $4x^2 - 12 + 4$
+		\item  $a^3b - ab^3$
+		\item  $(x + y) \cdot (xy + 1) -y \cdot (x^2 + 1 + xy)$
+		\item  $x^4 - 1$
+		\item  $a^4 + 2a^2b^2 + b^4$
+		\item  $a - 2\sqrt{a}\sqrt{b} + b$
+		\item  $k^2 - p^2 + k + p$
+		\item  $x^2 + 8x + 16$
+		\item  $30 + x^2 + 12x + 6$
+		\item  $x^2 + w^2 + 2xy + y^2$
+		\item  $y^4 + y^2 + \frac{1}{4}$
+		\item  $-1 + x^2 + 2y - y^2$
+		\item  $x^3 + 8x^2 + 16x$
+	\end{enumerate}
+
+\item Simplifique a expressão $\left( \frac{1}{b - a}\right) \cdot \frac{(ax - a^2 -bx + b^2)}{b -x + a}$ 
+
+\item Desenvolva as expressões a seguir (estas são formas fatoradas interessantes):
+	\begin{enumerate}
+		\item  $(x - y) \cdot (x^2 + xy + y^2)$
+		\item  $(x + y)^3$
+	\end{enumerate}
+
+\item (FATEC-2002) Sabe-se que $a^2 - 2bc -b^2 -c^2  = 40$ e que $a - b - c = 10$, com $a$, $b$ e $c$ números reais. Então, quanto vale $a + b + c$?
+	\begin{enumerate}
+		\item  1
+		\item  2
+		\item  4
+		\item  10
+		\item  20
+	\end{enumerate}
+
+\item (FEI-2005) Ao fatorar e simplificar a seguinte expressão algébrica
+		$$ \frac{abx^2 + aby^2 + a^2xy + b^2xy}{ax + by} $$
+		 com $ax + by \neq 0$, obtemos:
+	\begin{enumerate}
+		\item  2
+		\item  1
+		\item  $ax + by$
+		\item  $ay + bx$
+		\item  $ax + b$
+	\end{enumerate}
+
+\item (Mack-98) Se $a^{\frac{1}{2}} + a^{-\frac{1}{2}} = \frac{10}{3}$, então $a + a^{-1}$ vale:
+	\begin{enumerate}
+		\item  $\frac{100}{9}$
+		\item  $\frac{83}{3}$
+		\item  $\frac{82}{9}$
+		\item  $\frac{100}{82}$
+		\item  $\frac{16}{9}$
+	\end{enumerate}
+
+\item (FUVEST-Segunda fase-Modificado) Fatorar $a^4 + a^2 + 1$. \\
+
+\end{enumerate}
+
+
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre equações lineares	%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Equações Lineares]{Equações Lineares}
+
+
+\section{Introdução}
+	Durante o dia a dia, muitas vezes nos encontramos em  situações nas quais queremos descobrir algum valor a partir de outros. Como por exemplo, quando fazemos uma compra de, digamos, 85 reais e pagamos com uma nota de 100 reais, queremos saber quanto é o troco. \\
+	Ou quando alguém lhe diz a idade e você quer descobrir em que ano a pessoa nasceu... \\
+	Estes são exemplos de equações (muito simples) e este é o objeto de estudo deste capítulo. \\
+
+
+\section{O que é uma equação}
+	Todos nós sabemos o que é uma igualdade: algo que envolve duas expressões matemárica, separadas por um sinal de igual, e que nos diz que ambas têm o mesmo valor.\\
+	Como $5 = 3+ 2$ ou $7 + 8 = 2 \cdot 7 + 1$. \\
+	Nestes dois exemplos, é possível avaliar se a igualdade é verdadeira ou falsa (3 mais 2 é realmente igual a 5, logo, a primeira igualdade é verdadeira e sete mais oito é igual a quinze, assim como dois vezes sete mais um também é igual a quinze, logo, a segunda igualdade também é verdadeira). \\
+	Mas, estas são igualdade muito simples, digamos que nós tivéssimos a seguinte igualdade:
+	$$ 6 + x = 9 $$
+	ela é verdadeira ou falsa? \\
+	A resposta é: depende do valor de $x$.  Se $x = 1$, então ela é falsa (pois 7 é diferente de 9), mas se $x = 3$, então ela é verdadeira. \\
+	Este tipo de igualdade (envolvendo variáveis, também conhecidas como \emph{icógnitas}) é o que chamamos de equação. \\
+	Resolver uma equação é achar os valores que podemos atribuir às icógnitas para tornar a igualdade verdadeira. \\
+	Por exemplo:\\ \\
+	\* $2 \cdot x + 4 = 8$ é verdadeira  para $x = 2$. \\ \\
+	\* $x^2 - 2 = 14$ é verdadeira para $x = 4$ e para $x = -4$. \\ \\
+	\* $2^x = 32 $ é verdadeira para $x = 5$.\\ \\
+	\* $x^4 = -1$ não é verdadeira para qualquer $x$ real. Isto quer dizer que ela não tem solução (se estivermos trabalhando com números reais). \\
+
+	Nestes exemplos, vimos vários tipos de equações, com uma solução, duas soluções ou nenhuma solução.\\
+	Mas como achar as soluções de uma equação? \\
+	Para resolvermos uma equação, podemos efetuar operações sobre os dois lados da igualdade, isto é, somar, subtrair, multiplicar, dividir, etc, até que a icógnita apareça sozinha em um dos lados da equação e não apareça no outro lado. \\
+	Por exemplo, para resolver a equação $3x = 9$, podemos dividir os dois lados da equação por 3, obtendo $x = \frac{9}{3} = 3$.\\
+	Logo, $x = 3$ é a solução dessa equação. \\
+	Já na equação $x^3 + 2 = 10$, podemos subtrair 2 de ambos os lados e obter $x^3 = 8$, da qual vemos que a solução é $x = 2$, pois $2^3 = 8$. \\
+	Agora, vamos nos focar em um tipo particular de equação, as equações do primeiro grau.
+
+
+
+%%%%%%%%
+% Definição de equação do primeiro grau.
+%%%%
+\section{Definição}
+	Uma equação do primeiro grau é uma igualdade da forma (ou que pode ser escrita na forma)
+		$$a \cdot x + b = 0$$
+	com $a$ diferente de zero e $x$ sendo a icógnita. \\
+	Este tipo  de equação também é conhecido como equação linear.
+
+
+
+\section{Propriedades}
+	Uma equação do primeiro grau sempre tem solução e a solução é única. \\
+	Note que, como ela é da forma $ax + b = 0$ e $a$ é diferente de zero, podemos subtrair $b$ de ambos os lados e obter
+		$$ax = -b$$
+	para depois dividir ambos os lados por $a$, ficando com
+		$$x = -\frac{b}{a}$$
+	ou seja, a solução sempre vai ter esta forma.
+
+
+\section{Exemplos}
+	\begin{enumerate}
+	\item $3 \cdot x + 5 = 9$ é uma equação do primero grau, pois pode ser reescrita como $3x -4 = 0$
+	\item $x^2 - 8 = 15$ não é do 1º grau, pois a icógnita está elevada a 2.
+	\item $x + x = 2 $  é de primeiro grau, pois pode ser reescrita como $2x -2 = 0$
+
+	% FATEC
+	\item Vamos resolver um exercício do vestibular de 1995, da FATEC:\\
+			``Uma pessoa, que pesa atualmente 70kg, deseja voltar a pesar 56kg. Suponha que uma dieta alimentar resulte em um emagrecimento de exatamente 200g por semana, então, fazendo esta dieta, a pessoa alcançará seu objetivo ao fim de quantas semanas?'' \\
+			\emph{Resolução:}\\
+			Este é um problema que pode ser resolvido com uma equação do primeiro grau.\\
+			Antes de começarmos de fato, note que os dados estão em unidades de medidas diferentes (devemos sempre nos atentar a isto. Na matemática isto não é tão comum, mas na física...), então, vamos converter todas para gramas:\\
+			$1kg = 1000g$, então $70kg = 70 \cdot (1000g) = 70000g$ e $56kg = 56000g$.\\
+			Agora, se a pessoa emagrece 200g por semana, então, chamando de $x$ a quantidade de semanas passadas até que a pessoa obtenha os 56kg, temos que
+			$$70000 - 200x = 56000$$
+			ou seja, o peso atual, menos 200 vezes a quantidade de semanas necessárias é igual ao peso desejado.\\
+			Como vemos, está é uma equação de primeiro grau, então, agora é só resolvê-la:\\
+			Subtraindo 70000 de ambos os lados, obtemos: \\ \\
+$-200x = 56000 - 70000 \Leftrightarrow$ resolvendo o lado direito \\ \\
+$-200x = -14000 \ \ \ \ \ \ \ \ \ \Leftrightarrow$ multiplicando ambos os lados por -1 \\ \\
+$200x = 14000 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Leftrightarrow $  dividindo ambos os lados por 200\\ \\
+$x = \frac{14000}{200} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Leftrightarrow$ resolvendo o quociente\\ \\
+$x = 70$\\
+			Assim, ela obterá o peso desejado em 70 semanas (é, vai demorar um pouquinho hehehe).
+
+	\end{enumerate}
+
+
+\section{Exercícios}
+\begin{enumerate}
+\item Diga se as equações abaixo são do primeiro grau ou não (em caso afirmativo, diga quais são os valores de $a$ e de $b$, em caso negativo, justifique sua resposta).
+	\begin{enumerate}
+	\item $3x + 5 = 0$
+	\item $3x + 5x = x$
+	\item $x + \frac{1}{x} = 0$
+	\item $x^3  = x^2$
+	\item $2^x = 1$
+	\item $\frac{x}{3} + 5 = 1$
+	\item $5x = 0$
+	\item $y^2 \cdot x + 6 = 2$, onde $y$ é uma constante.
+	\end{enumerate}
+
+\item Resolva as seguintes equações:
+	%%%%%  Uma estrutura enumarate dentro de outra gera itens com letras ao invés de números
+	\begin{enumerate}
+		\item $2x + 3 = x$
+		\item $-3 + 8x - 1 = 2x + 2$
+		\item $x + 1 = 2x + 2 + x$
+		\item $5x + 5 = x - 1 - x$
+	\end{enumerate}
+
+
+\item Considere a equação 
+	$$3 \cdot (4x + n) - n \cdot (2 + x) = 4$$
+ 	na qual $x$ é a icógnita.\\
+	Ache o valor de $n$ para qual o valor $-1$ é solução desta equação.
+
+% exercício de vestibular
+\item (UEL) Um comerciante varejista comprou 80 calças de dois tamanhos diferentes, pequeno e médio, gastando 4.300 reais. Cada calça de tamanho pequeno custou 50 reais e cada calça de tamanho médio custou 60 reais. Quantas calças de tamanho pequeno e médio, respectivamente, ele comprou?
+	\begin{enumerate}
+		\item 30 e 50
+		\item 37 e 43
+		\item 40 e 40
+		\item 43 e 37
+		\item 50 3 30
+	\end{enumerate}
+
+
+
+\end{enumerate}
+
+%%%%		%%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Capítulo sobre equações de segundo grau	%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+
+\chapter[Equações de Segundo Grau]{Equações de Segundo Grau}
+
+
+\section{Introdução}
+	
+	Neste capítulo vamos estudar um tipo diferente de equações: as equações do segundo grau. \\
+	Elas diferem das equações lineares pelo fato de que a icógnita aparece elevada ao quadrado.\\
+	Só isto já torna este tipo de equação muito mais interessante (alguns vão dizer mais difíceis, mas eu discordo dos que dizem isto). \\
+	Também é um tipo de equação muito comum nos vestibulares.
+
+%%%%%%%%
+% Definição de equação quadrática.
+%%%%
+\section{Definição}
+	Uma equação do segundo grau (também conhecida como equação quadrática) é uma equação da forma (ou que pode ser escrita na forma)
+		$$a \cdot x^2 + b \cdot x + c = 0$$
+	com $a \neq 0$ e $x$ sendo a icógnita. \\
+
+
+
+\section{Propriedades}
+	Diferente de uma equação do primeiro grau, uma equação quadrática nem sempre tem solução, isto quer dizer que as vezes não existem um valor real que a satisfaça.\\
+	Por exemplo, se considerarmos a equação
+		$$x^2 = -9$$
+	Como não há nenhum valor real que elevado ao quadrado resulte em um número negativo, esta equação não tem solução (neste caso, dizemos que o conjunto solução é vazio).\\
+	Mas, se retirássemos o sinal de menos, ficando com a equação
+		$$x^2 = 9$$
+	então, poderíamos tirar a raíz dos dois lados e obter 
+		$$x = \pm \sqrt {9} =  \pm 3$$
+	ou seja, os valores $3$ e $-3$ seriam solução. \footnote{Em uma equação do segundo grau, sempre que tiramos a raíz de ambos os lados, temos que colocar os sinais de mais e menos ($\pm$), pois tanto o valor negativo quanto o positivo é solução.}.\\
+	Neste caso, a equação tem duas soluções distintas. \\
+	Além disto, como veremos mais adiante, ainda pode acontecer de haver apenas uma solução para uma equação do segundo grau. \\
+	Assim, notamos a primeira propriedade interessante de uma equação quadrática: \\ \\
+
+	\emph{Uma equação do segundo grau pode ter duas, uma ou nenhuma solução.}\\ \\
+
+
+\section{Resolvendo}
+	Sabemos reconhecer uma equação do 2º grau, sabemos que ela pode ou não ter solução, mas como é que encontramos essas soluções? \\
+	Em geral, usamos a famosa \emph{fórmula de Baskara}:\\
+	Considere a equação
+		$$ax^2 + bx + c = 0$$
+	com $a$ diferente de zero. \\
+	Se divirmos ambos os lados por $a$, obtemos
+		$$x^2 + \frac{b}{a}x + \frac{c}{a} = 0$$
+	Agora, notando que $1 = \frac{2}{2}$, podemos multiplicar o segundo termo por essa fração sem alterar a igualdade:
+		$$x^2 + 2\frac{b}{2a}x + \frac{c}{a} = 0$$
+	Podemos então completar um quadrado, somando $(\frac{b}{2a})^2$ em ambos os lados:
+		$$x^2 + 2\frac{b}{2a}x + (\frac{b}{2a})^2 + \frac{c}{a}  = (\frac{b}{2a})^2$$
+	Assim, usando a fatoração do quadrado perfeito, obtemos
+		$$(x + \frac{b}{2a})^2 + \frac{c}{a}  = (\frac{b}{2a})^2$$
+	Que equivale a
+		$$(x + \frac{b}{2a})^2 = (\frac{b}{2a})^2 - \frac{c}{a}  $$
+	Simplificando a parte esquerda (multiplicando e dividindo $\frac{c}{a}$ por $4a$ e somando)
+		$$(x + \frac{b}{2a})^2 = \frac{b^2 - 4ac}{4a^2}$$
+	Tirando a raíz quadrada, obtemos:
+		$$x + \frac{b}{2a} = \pm \sqrt {\frac{b^2 - 4ac}{4a^2}} = \pm \frac{\sqrt{b^2 - 4ac}}{2a} $$
+	Subtraindo $\frac{b}{2a}$ de ambos os lados, chegamos finalmente em
+		$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+	Que nos diz que existem dois valores possíveis para o $x$: um somando a raíz e outro subtraindo.\\
+	Portanto, nos casos em que esta raíz dá zero (ou seja, quando $b^2 - 4ac = 0$), o $x$ assume apenas um valor (pois iremos somar ou subtrair zero). Este é o único caso em que a equação quadrática tem apenas  uma solução. \\
+	Por conveniência, muitos fazem $\Delta = b^2 - 4ac$ e escrevem a fórmula de Baskara como:
+		$$ x = \frac{-b \pm \sqrt{\Delta}}{2a} $$
+
+\section{Exemplos}
+	\begin{enumerate}
+	\item \textbf{Vamos resolver a equação $3x^2 + x - 4 = 0$:}\\
+		Comecemos identificando os coeficientes: neste caso $a = 3$, $b = 1$ e $c = -4$.\\
+		Agora, calculemos o discriminante:
+		$$\Delta = b^2 - 4ac = (1)^2 -4 \cdot 3 \cdot (-4) = 1 + 48 = 49$$
+		Assim, as soluções são:
+		$$x_1 = \frac{-b + \sqrt{\Delta}}{2a} = \frac{-1 + 7}{2 \cdot 3} = \frac{6}{6} = 1$$
+		e
+		$$x_2 = \frac{-b -\sqrt{\Delta}}{2a} = \frac{-1-7}{2 \cdot 3} = \frac{-8}{6} = -\frac{4}{3}$$
+
+	\item \textbf{Quais são as soluções da equação $x^2 + 2x = 0$?} \\
+		Neste caso, $a = 1$, $b = 2$ e $c = 0$.\\
+		Assim, temos $\Delta = b^2 - 4ac = 2^2 - 0 = 4$.\\
+		Portanto, as soluções são:
+		$$x_1 = \frac{-b+\sqrt{\Delta}}{2a} = \frac{-2+\sqrt{4}}{2 \cdot 1} = \frac{-2 + 2}{2} = \frac{0}{2} = 0$$
+		e
+		$$x_2=\frac{-b-\sqrt{\Delta}}{2a} = \frac{-2 - \sqrt{4}}{2 \cdot 1} = \frac{-2 - 2}{2} = -\frac{4}{2} = -2$$
+		Ou seja, as soluções desta equação são os valores $0$ e $-2$.\\
+		Poderíamos ainda resolver esta equação sem o uso da fórmula de Baskara, colocando o $x$ em evidência e usando o fato de que, quando um produto dá zero, então um de seus fatores é zero.\\
+		Ou seja, \\
+		$$x^2 + 2x = 0 \Leftrightarrow x ( x + 2) = 0$$
+		Então, $x= 0$ ou $x + 2 = 0$, que implica $x = -2$.\\
+		Logo, as soluções são $\{0, -2\}$ (note que são as mesmas de quando resolvemos com a fórmula de Baskara).
+
+	\end{enumerate}
+
+\section{Dicas}
+	É possível resolver algumas equações do 2º grau sem usar a fórmula de Baskara, economizando tempo na resolução. \\
+	Quando a equação é da forma 
+		$$ax^2 + bx = 0$$
+	ou seja, quando ela tem $c = 0$, podemos resolver simplesmente colocando $x$ em evidência, conforme fizemos no exemplo anterior, obtendo então
+	 $$x = 0 \ \  ou \ \ \ x = -\frac{b}{a}$$
+	Quando a equação é da forma
+		$$ax^2 + c  = 0$$
+	ou seja, com $b = 0$, basta passar o $c$ para o outro lado e tirar a raíz, obtendo
+		$$x = \pm \sqrt{-c}$$
+
+\section{Exercícios}
+\begin{enumerate}
+	\item Resolva as seguintes equações do segundo grau (não é necessário usar a fórmula de Baskara em todas):\\
+	\begin{enumerate}
+		\item $3x^2 - 2x -1 = 0$
+		\item $2x^2 - 2x -4 = 0$
+		\item $x^2 + x - 12 = 0$
+		\item $x^2 - 16 = 0$
+		\item $4x^2 - 16x = 0$
+		\item $x^2 + 3x + 2 = 0$
+		\item $3x^2 - 20 = 1 + 6$
+	\end{enumerate}
+
+	\item Usando o teorema de Pitágoras, descubra o comprimento da hipotenusa do triângulo retângulo.
+
+		\begin{figure}
+		\centering	
+		\includegraphics[width=0.35\textwidth]{img/trian_ret.jpg}
+			\caption{Triângulo retângulo.}
+		\end{figure}
+
+	\item Sartre e Mariane vão dividir os 2 quartos que têm em 4 quartos, pois eles adotaram duas crianças, Beethoven e Russel, e precisam de dois novos quartos para os dois.\\
+		Os quartos serão divididos conforme a figura, onde $x$ é a largura e ao  mesmo tempo o comprimento do quarto que será de Russel.\\ \\
+
+		%%%%%%%%
+		%%  Desenhando o retângulo
+		\setlength{\unitlength}{5cm}
+		\begin{picture}(1,1)
+		% marcação do comprimento da esquerda
+		\put(-0.09,0.48){$9$}
+		\put(-0.07,0){\line(0,1){0.4}}
+		\put(-0.11,0){\line(1,0){0.08}}
+		\put(-0.07,1){\line(0,-1){0.4}}
+		\put(-0.03,1){\line(-1,0){0.08}}
+		% marcação do comprimento de baixo
+		\put(0.3, -0.09){$4$}
+		\put(0, -0.06){\line(1,0){0.25}}
+		\put(0,-0.1){\line(0,1){0.08}}
+		\put(.4,-0.06){\line(1,0){0.3}}
+		\put(0.7,-0.1){\line(0,1){0.08}}
+		% marcação do comprimento do x de cima
+		\put(0.48,1.05){$x$}
+		\put(0.3,1.07){\line(1,0){0.14}}
+		\put(0.3,1.03){\line(0,1){0.08}}
+		\put(0.58,1.07){\line(1,0){0.12}}
+		\put(0.7,1.03){\line(0,1){0.08}}
+
+		% marcação do comprimento do x de cima
+		\put(0.75,.76){$x$}
+		\put(0.78, 1){\line(0,-1){.17}}
+		\put(0.81, 1){\line(-1,0){.07}}
+		\put(0.78, 0.6){\line(0,1){.12}}
+		\put(0.8, 0.6){\line(-1,0){.05}}
+
+		% desenhando o retângulo
+		\put(0,0){\line(0,1){1}}
+		\put(0,0){\line(1,0){0.7}}
+		\put(0.7,0){\line(0,7){1}}
+		\put(0,1){\line(1,0){0.7}}
+		\put(0,0.6){\line(1,0){0.7}}
+		\put(0.3,0){\line(0,1){1}}
+
+		% Legenda
+		\put(.45, .75){R}
+		\put(.12, .3){B}
+		\put(1.3, 0.7){Legenda:}
+		\put(1.6, 0.5){R: Quarto do Russel}
+		\put(1.6, 0.3){B: Quarto do Beethoven}
+
+		\end{picture}
+		
+		. \\ Como Beethoven adora tocar piano, seu quarto precisa ser maior,  já que um piano ocupa muito espaço.\\
+		Assim, Russel, que é muito bom em matemática, encontrou um valor para $x$ que fizesse com que o seu quarto ficasse com aproximadamente metade da área do quarto de Beethoven. Que valor foi esse?\\
+		\begin{enumerate}
+		\item 25
+		\item 6
+		\item 4
+		\item 12
+		\end{enumerate}
+
+
+
+
+\end{enumerate}
+\end{document}

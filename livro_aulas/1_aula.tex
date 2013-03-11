@@ -1,0 +1,224 @@
+
+%% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %% %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%    Capítulo sobre potenciação		%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{book}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+\usepackage{amsthm}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}	% Começo do conteúdo.
+
+\title{Matemática}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+\date{01/03/2012}
+\maketitle
+
+
+\chapter[Potenciação]{Potenciação}
+
+
+\section{Introdução}
+	De maneira geral, quando pensamos em potências, pensamos em um produto (uma multiplicação) efetuada várias vezes, como por exemplo,
+
+	 $$2^3 = 2\cdot2\cdot2 = 8$$
+
+	Isso é verdade em apenas alguns casos particulares, mas, se tomássemos, por exemplo, $2 ^ {3.5}$ (dois elevado a três e meio), então teríamos que multiplicar 2 por 2 três vezes e meia? Como fazemos isto? Esta expressão faz sentido?
+	E se tivéssemos que calcular $4^{-1}$ (quatro elevado a menos 1)? Teríamos que multiplicar 4 por ele próprio menos uma vez? Como?
+
+	Neste capítulo iremos responder algumas dessas perguntas e aprender a trabalhar com as potências.
+
+
+\section{Definição}
+	Potenciação (também conhecida como exponenciação) é uma operação matemática que envolve dois números \textbf{a} e \textbf{b}, representada por
+			$$a^b$$
+onde \textbf{ a} é chamado de \textbf{base} e \textbf{b} é chamado de \textbf{ expoente}. Esta operação é definida como segue:
+\\
+
+\textbf{\large expoente positivo:} \\
+Se ${b \in \{1, 2, 3, ...\}}$, ou seja, se b for um inteiro maior que zero, então
+		$$a ^ b = \underbrace{a \cdot a \cdot a \cdot ... \cdot a}_{b \ vezes}$$
+Por exemplo, para $a = 5$ e $b = 3$, temos, $a^b = 5^3 = 5 \cdot 5 \cdot 5 = 25 \cdot 5 = 125$. Ou seja, como 3 é um inteiro maior que zero, então basta multiplicarmos 5 por 5 três vezes.
+
+\textbf{\large expoente negativo:} \\
+Definimos uma potência com expoente negativo como:
+$$ a ^ {-b} = \frac{1}{a^{b}}$$
+ou seja, retiramos o sinal de menos do b e dividimos 1 por $a^b$.
+Por exemplo, se $a = 5$ e $b = -3$, temos, $a^b = 5^{-3} = \frac{1}{5^3} = \frac{1}{125} = 0.008$
+
+
+\textbf{Exemplos:} \\
+\begin{itemize}
+\item $2 ^ 4 = 2 \cdot 2 \cdot 2 \cdot 2 = 16$
+\item $(\frac{3}{2}) ^ 2 = \frac{3}{2} \cdot \frac{3}{2} = \frac{9}{4}$
+\item $(-6) ^ 2 = (-6) \cdot (-6) = 36$ (observe o uso da regra do sinal)
+\item $(1.2) ^ 3 = (1.2) \cdot (1.2) \cdot (1.2) = 1.728$
+\item $4 ^ {-2} = \frac{1}{4^2} = \frac{1}{16}$
+\item $(\frac{1}{2}) ^ {-3} = \frac{1}{\left( \frac{1}{2} \right)^3} = \frac{1}{\left(\frac{1}{8}\right)} = 8$
+\item $(-3) ^ {-3} = \frac{1}{3^3} = \frac{1}{(-3) \cdot (-3) \cdot (-3)} = -\frac{1}{27}$ (observe o uso da regra do sinal)
+\end{itemize}
+
+\section{Propriedades}
+	Nesta seção iremos provar algumas propriedades das potências. Elas são muito importante para facilitar os cálculos de expressões que envolvam potências. \\
+	Por exemplo, quanto vale $3^{-1}\cdot3^3\cdot(\frac{1}{3^2}) - 1789^0$? \\
+	Vamos tentar calcular este valor: \\
+	$$3^{-1}\cdot3^3\cdot(\frac{1}{3^2}) - 1789^0 = \frac{1}{3}\cdot27\cdot\frac{1}{9} - 1789^0$$
+	Agora teríamos que multiplicar as frações, depois dividir, resolver a fração resultante ($\frac{27}{27}$) e subtrair $1789^0$. Isso seria igual a $1 - 1789^0$, etc.\\
+	Mas, quanto vale $1789^0$?\\
+	Ou seja, depois de todo esse trabalho ainda não conseguiríamos saber quanto vale aquela expressão.\\
+	Por isso, precisamos usar as propriedades que vamos aprender agora: \\
+\begin{description}
+%-------------  Propriedade 1
+\item[\underline{ Soma de expoentes:}] Se $n > 0$ e $m > 0$, então $a^n \cdot a^m = a^{n+m}$ 
+\\	\textbf{Prova:}  $a^n \cdot a^m = \underbrace {(a \cdot a \cdot a \cdots a)}_{n \  vezes} \cdot \underbrace {(a \cdot a \cdot a ... a)}_{m \  vezes} = \underbrace{a \cdot a \cdot \cdots a}_{n + m \ vezes} = a^{n + m} $
+%------------- Propriedade 2
+\item[\underline{ Subtração de expoentes:}] Se $a \ne 0$, então $\frac{a^n}{a^m} = a^{n - m}$
+\\	\textbf{Prova:} $$\frac{a^n}{a^m} = \frac{\overbrace{a \cdot a \cdot a \cdots a}^{n \ vezes}}{\underbrace{a \cdot a \cdot a \cdots a}_{m \ vezes}} \ \ \  \Leftrightarrow  separando \ os\ m\ primeiros\ termos\ do\ produto$$
+$\frac{a^n}{a^m} = \frac{\overbrace{a \cdot a \cdot a \cdots a}^{m \ vezes}}{\underbrace{a \cdot a \cdot a \cdots a}_{m \ vezes}} \cdot \frac {\overbrace{a \cdot a \cdot a \cdots a}^{n - m \ vezes}}{1}  \ \ \  \Leftrightarrow$ \ aplicando\ a\ definição\ de\ potência \\ \\
+$\frac{a^n}{a^m} $ \ \ $=$ \ \ $\frac{a^m}{a^m}\cdot  \frac{a^{n - m}}{1}  \Leftrightarrow$ \ \  $a^m$ sobre $a^m$  dá\ 1  \\ \\
+$\frac{a^n}{a^m} $  \ \ $=$ \ \ $1 \cdot a^{n - m} = a^{n - m}$ 
+\\
+
+%------------- Propriedade 3
+\item[\underline{ Potências de zero:}] Se $a \ne 0$, então $a^0 = 1$
+\\	\textbf{Prova:} \\ Primeiro note que pra todo número n, temos que $0 = n - n$ (ou seja, $2 - 2 = 0$, $3 - 3 = 0$, $4 - 4 = 0$ e assim sucessivamente). \\
+	Então, \\
+	\ $a^0 = a^{n - n}  \Leftrightarrow$  \ \ \ usando o propriedade de subtração de expoentes \\
+	\ $a^0 = \frac{a^n}{a^n} = 1 $ \\
+
+%------------- Propriedade 4
+\item[\underline{ Produto de potências:}] $(a^n)\cdot(b^n) = (a \cdot b)^n$
+\\	\textbf{Prova:} 
+	$$(a^n) \cdot (b^n) = \underbrace {(a \cdot a \cdot a \cdots a)}_{n \ vezes} \cdot \underbrace {(b \cdot b \cdot b \cdots b)}_{n \ vezes} \Leftrightarrow \ \ reordenando\ os\ termos$$
+	$(a^n) \cdot (b^n) = \underbrace {(a \cdot b) \cdot (a \cdot b) \cdots (a \cdot b)}_{n \ vezes} \Leftrightarrow$ \ \ pela definição de  potência  \\ \\
+	$(a^n) \cdot (b^n) = (a \cdot b) ^  n $
+
+%------------- Propriedade 5
+\item[\underline{ Quociente de potências:}]  Se $b \ne 0$,  então, $\frac{a^n}{b^n} = (\frac{a}{b})^n$
+\\	\textbf{Prova:} \\
+	$\frac{a^n}{b^n} = a^n \cdot \frac{1}{b^n} = a^n \cdot (\frac{1}{b})^n \Leftrightarrow $  \ Pela propriedade anterior  \\ \\
+	$\frac{a^n}{b^n} = (a \cdot \frac{1}{b})^ n = (\frac{a}{b})^n$ \\
+	Note que, nesta prova, usamos o fato de que $\frac{1}{b^n} = (\frac{1}{b})^n$.  Você consegue dizer por que isto é  verdade? \\
+
+%------------- Propriedade 6
+\item[\underline{ Potência de potência:}]  $(a^m)^n = a^{m \cdot n}$
+\\	\textbf{Prova:} \\
+	$$(a^m)^n = \underbrace{(a^m)\cdot (a^m)\cdots (a^m)}_{n \ vezes} $$
+	Usando a propriedade de soma dos expoentes, teremos
+	$$(a^m)^n = a^{\overbrace{m + m + m + ... + m}^{n \ somas}} =  a^{m \cdot n}$$
+
+%------------- Propriedade 7
+\item[\underline{ Potência de expoente par:}] Seja $n$ um inteiro par. Então $(-a)^n = a^n$.
+\\	\textbf{Prova:} \\
+	Primeiro, note que se um número $n$ é par, então ele pode ser escrito como $2k$, para algum $k$.\\
+	Por exemplo, $4 = 2 \cdot 2$, $8 =  2 \cdot 4$, $20 = 2 \cdot 10$, $-14 = 2 \cdot (-7)$...
+	Então, tomando $n = 2 \cdot k$, temos que, \\
+	$ (-a)^n = (-a)^{2 \cdot k} \ \ \Leftrightarrow \ \ $ usando a propriedade de potência de potência \\
+	$ (-a)^n = [(-a)^2]^k \  \Leftrightarrow \ \ $ como $(-a)^2 = a^2$ (regra do sinal) \\
+	$ (-a)^n = (a^2)^k  \ \ \ \ \ \Leftrightarrow \ \ $ novamente, propriedade de potência de potência \\
+	$ (-a)^n = a^{2 \cdot k}  = a^n$
+\end{description}
+
+%%%%%%%
+%%  Exemplos de usos das propriedades
+\section{Exemplos}
+\begin{enumerate}
+\item Calcular $(3^2 \cdot 3^{-2})^3$ \\
+	Usando a propriedade de soma de expoentes, temos que \\
+	$(3^2 \cdot 3^{-2})^3 = (3^{2 - 2})^3 \ \ \ \Leftrightarrow$ como $2 - 2 = 0$  \\
+	$(3^2 \cdot 3^{-2})^3 = (3^0)^3 \ \ \ \ \ \ \Leftrightarrow$ como $3^0 = 1$  \\
+	$(3^2 \cdot 3^{-2})^3 = 1^3 = 1$
+
+\item Seja $ y = \frac{(-2)^8 \cdot 4^4}{(8^2) \cdot 2^{12}}$. É verdade que $y$ é maior que 2? \\
+	Levando em consideração que $(-2)^8 = 2^8$ (propriedade de expoente par), temos \\
+	$ y = \frac{2^8 \cdot 4^4}{(8^2) \cdot 2^{12}} \Leftrightarrow $ como  $4 = 2^2$ \\  \\
+	$ y = \frac{2^8 \cdot (2^2)^4}{(8^2) \cdot 2^{12}} \Leftrightarrow $ como $8 = 2^3$ \\ \\
+	$ y = \frac{2^8 \cdot (2^2)^4}{[(2^3)^2] \cdot 2^{12}} \ \ \Leftrightarrow $ propriedade de potência de potência \\ \\
+	$y =\frac{2^8 \cdot 2^8}{(2^6) \cdot 2^{12}} \ \ \ \ \Leftrightarrow $ propriedade de soma de expoentes \\ \\
+	$ y = \frac{2^{8+8}}{2^{6+12}} \ \ \ \ \ \ \Leftrightarrow $  efetuando as somas \\ \\
+	$ y = \frac{2^{16}}{2^{18}} \ \ \ \ \ \ \ \  \Leftrightarrow $ subtraindo os expoentes \\ \\
+	$ y = 2^{-2} \ \ \ \ \ \ \ \  \Leftrightarrow  $ \ \ definição de  potência \\ \\
+	$ y = \frac{1}{4} = 0.25$ \\ \\
+	Sendo assim, $y < 2$, ou seja, não é verdade que $y > 2$.
+\end{enumerate}
+
+%%%%%%  
+%% Seção para sanar erros comuns
+
+\section{Erros comuns}
+Tome cuidado para não cometer estes erros:\\
+\begin{description}
+\item[Sinal da base]
+	Tome muito o cuidade de verificar se o sinal está incluido na base ou não. Por exemplo: \\
+	$-3^2 = - (3)\cdot(3) = -9$, ou seja, neste caso temos ``menos quadrado de três'', a base é 3 e não -3.
+\\ Mas, \\
+	$(-3)^2 = (-3) \cdot (-3) = 9$, pois temos ``o quadrado de menos três'', ou seja, a base é -3.
+\item[Multplicar expoentes]
+	Tome cuidado ao usar a propriedade $(a^m)^n = a^{m \cdot n}$.
+	\\ Note o seguinte:\\
+	$2^{3^2}$ é o mesmo que ``dois elevado a ao quadrado de três'', que dá \\ $2^9 = 512$ (se usássemos a regra de multiplicação dos expoentes, obteríamos $2^{3^2} = 2^{3\cdot2} = 2^6 = 64$, o que é errado, já que o resultado correto é 512).
+	\\	Porém, $(2^3)^2$ é o mesmo que ``o quadrado de dois ao cubo'', que dá $(2\cdot2\cdot2)^2 = 8^2 = 64$.\\
+		Observe que neste caso poderíamos usar a propriedade de multiplicar os expoentes (teríamos $(2^3)^2 = 2^{3\cdot2} = 2^6 = 64$).
+
+\item[Quadrado da soma]
+	 Outro erro comum é achar que o quadrado de uma soma é igual a soma dos quadrados.
+	\\	Por exemplo:\\
+	$(a + b)^2 = a^2 + b^2$ .......  \textbf{ERRADO}. \\
+	$(a + b)^2 = (a + b)\cdot(a + b) = a^2 + 2 \cdot a b + b^2$ ....... \textbf{CORRETO}. \\
+	Temos que multiplicar a expressão entre parênteses por ela própria fazendo a distributiva (veja a parte de fatoração para mais detalhes sobre este exemplo).
+
+\item[Expoente negativo]
+	Em uma potência com \textbf{expoente negativo}, quando retiramos o sinal de menos do expoente, não o colocamos na frente do resultado.\\
+	\begin{description}
+	\item[ERRADO   ):] $2^{-3} = - 2^3 = -8$
+	\item[ERRADO   $|$:] $2^{-3} = - \frac{1}{2^3} = - \frac{1}{8}$
+	\item[CORRETO  (:] $2^{-3} = \frac{1}{2^3} = \frac{1}{8}$
+	\end{description}
+
+\end{description}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	Seção de exercícios
+%%%%%%%%%%%%
+
+\section {Exercícios}
+
+\begin{enumerate}
+% exercício um
+\item Calcule as seguintes expressões envolvendo potências:
+	\begin{description}	
+	\item[a.] $3^1 + 3^{-1} - \frac{3}{9}$
+	\item[b.] $\frac{2^{3+2}}{2^3} \cdot \frac{1}{2} $
+	\item[c.] $\frac{5^{25}}{125 \cdot 125 \cdot 5^{20}} \cdot 5 - 17923^0$
+	\item[d.] $(-2)^3 \cdot (\frac{3}{2})^2$
+	\item[e.] $\frac{1}{3^{-3}}$
+	\item[f.] $\frac{3^2 \cdot 4^4}{2^8 \cdot 9^1} - \frac{6^3}{2^3 \cdot 3^3}$
+	\item[g.] $\frac{1978^1}{235817^0} - \frac{1978^5}{1978^2 \cdot 1978^2}$
+	\item[h.] $(2^5 \cdot 2^{-3}) \cdot 2^{-5} \cdot (-2)^2$
+	\item[i.] $\frac{(3 + 2)^5}{5^3} - 10^1 \cdot 10^0 - 5^2 + 25$
+	\item[j.] $\left[\left(- \frac{2}{3} \right)^3 \cdot \left(\frac{6}{2} \right)^{-3} \cdot \left(\frac{2}{6} \right)^{-6} \cdot (-1) \right]^{1978}$
+	\item[k.] $3^2 \cdot \frac{(7^9 + 6 \cdot 7^9)}{7^8} \cdot (\frac{1}{7}) ^ 2 \cdot 3^{-1} \cdot \frac{1}{7^{-1}} $
+	\item[l.] $\left( 2^{3^2} \cdot 2 -\frac{1024^{10}}{(2^{10})^9} \right) \cdot 67$
+	\end{description}
+% exercício 2
+\item Em um tempo remoto, um sábio salvou um rei usando de sua inteligência para montar uma ótima estratégia de guerra. O rei, para agradecer este feito, disse ao sábio que lhe daria o que quisesse. Então, o sábio pediu ao rei que pegasse um tabuleiro de xadrez e colocasse dois gramas de ouro na primeira casa, quatro na segunda, oito na terceira, e assim sucessivamente, sempre dobrando a quantidade, e no fim desse a ele a quantidade de ouro que estivesse no tabuleiro.
+\\ O rei achou muito pouco, mas resolveu atender o pedido.
+\\ Você acha que o rei conseguiu fazer o que o sábio pediu? Por que?
+\\ (Observação: um tabuleiro de xadrez tem 64 casas).
+
+%exercício 3
+\item Sabendo que $(x + 2)^2 = 2$, quanto vale $\left[ 2 \cdot (x + 2)\right] ^ {10} \cdot \left( \frac{1}{4^4} \right)^2$?
+
+%exercício 4
+\item Se $x \in \mathbb{R}$, tal que $0 < x < 1$ (ou seja, x é um número real, maior que zero e menor que 1), então a expressão $x^n$ fica cada vez mais próxima de que número quando tomamos valores grandes de n?
+\\ (Dica: avalie a expressão para $n = 2$, depois para $n = 3$, depois para valores maiores de n e tente observar os  resultados). 
+\end{enumerate}
+
+
+\end{document}

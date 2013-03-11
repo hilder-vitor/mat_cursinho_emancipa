@@ -1,0 +1,66 @@
+Conteúdo cobrado pela FUVEST (retirado do próprio site da FUVEST).
+
+MATEMÁTICA:
+
+
+---------------
+1. CONCEITOS E RELAÇÕES NUMÉRICAS BÁSICAS E APLICAÇÕES
+
+1.1. Números inteiros: compreensão dos algoritmos das quatro operações fundamentais no sistema decimal de numeração, divisibilidade e a decomposição em fatores primos.
+
+1.2. Insuficiência dos números inteiros para a comparação de grandezas e para medir partes de um todo: razões e proporções; os números racionais; operações e a relação de ordem entre números racionais; representação decimal dos números racionais e sua relação com PG.
+
+1.3. Insuficiência dos números racionais para medir segmentos a partir de uma unidade fixada; o conceito de número irracional e a representação decimal dos números reais.
+
+1.4. Insuficiência dos números reais para a resolução de equações algébricas de segundo e terceiro graus; o conceito de número complexo e suas representações - geométrica, algébrica e trigonométrica; interpretação algébrica e geométrica das operações e das raízes de números complexos - raízes da unidade.
+
+1.5. Matemática financeira como instrumento para a resolução de problemas: os conceitos de porcentagem, juro simples e juro composto e sua relação com PA e PG, respectivamente.
+
+1.6. Sistemas lineares e matrizes como organização e sistematização de informações; discussão e resolução de sistemas lineares (de at é 4 equações e at é 4 incógnitas) por escalonamento ou 
+por substituição de variáveis. 
+
+
+---------------
+2. GEOMETRIA
+
+2.1. Características, elementos e propriedades geométricas (vértices, arestas, lados, alturas, ângulos, focos, diretrizes, convexidade, número de  diagonais,...) das seguintes figuras planas e espaciais: polígonos, círculos, setores circulares, elipses, parábolas, hipérboles, prismas, pirâmides, esfera, cilindros, cones e troncos.
+
+2.2. Congruência e Semelhança de figuras planas e espaciais. Razões entre comprimentos, áreas e volumes de figuras semelhantes. Teorema de Tales e aplicações: problemas envolvendo semelhança, somas dos ângulos internos e externos de polígonos. Casos de semelhança e congruência de triângulos e aplicações. Trigonometria do triângulo retângulo como instrumento para a resolução de problemas: seno, cosseno e tangente de ângulos agudos como razão de semelhança nos triângulos retângulos. 
+
+2.3. Eixos e planos de simetrias de figuras planas ou espaciais. 
+Reconhecimento das secções planas de cones e as definições de elipse, parábola e hipérbole como lugar geométrico. 
+Aplicações.
+
+2.4. Relações métricas nas figuras geométricas planas e espaciais. O teorema de Pitágoras: lei dos senos e cossenos, aplicações em problemas bi e tridimensionais tais que: cálculo de diagonais, alturas, raios, etc. 
+Comprimentos (ou perímetros), áreas (ou superfícies de sólidos) e volumes.
+
+2.5. Construções com régua e compasso no plano: retas perpendiculares e paralelas; mediatriz de segmento; divisão de segmentos em partes proporcionais; bisseção de ângulos; polígonos regulares (inscritos e circunscritos); triângulos quaisquer (com a determinação de seus elementos). Problemas de tangência, envolvendo circunferências.
+
+2.6. Geometria Analítica: coordenadas cartesianas de pontos no plano e no espaço. Distância entre pontos no plano e no espaço e problemas bi e tridimensionais simples envolvendo esses conceitos. Equações de retas no plano: significado dos coeficientes na equação normal, paralelismo e perpendicularismo; distância de ponto a reta. Equações de circunferências no plano: reconhecimento do centro, raio, retas secantes e tangentes. 
+Aplicações. Equações e inequações a duas incógnitas como representação algébrica de Lugares Geométricos no plano.
+
+
+---------------------
+3. FUNÇÕES
+
+3. 1. A noção de função como instrumento para lidar com variação de grandezas . Os conceitos de domínio e imagem. Caracterizações e representações gráficas e algébricas das seguintes funções: funções módulo, polinomiais de primeiro e segundo graus, raiz quadrada, f(x)=x^n, f(x)=1/x, f(x)=1/x², funções exponenciais e logarítmicas (cálculo de valores aproximados em casos de expoentes irracionais) e as funções seno, cosseno e tangente (definições geométricas no ciclo trigonométrico e valores nos arcos notáveis) e suas transladadas.
+Aplicações.
+
+3.2. Reconhecimento e interpretação de gráficos de funções: domínio, imagem, valores destacados no gráfico (máximos, mínimos, zeros), biunivocidade, periodicidade, simetrias, intervalos de crescimento e decrescimento, análise da variação da função.
+Aplicações em situações problema de contexto variado, incluindo estimativas ou previsões de valores.
+Equações e inequações envolvendo funções: resoluções gráficas e algébricas.
+Identidades funcionais importantes: princípio de identidade polinomial, produtos notáveis e fatoração de polinômios, principais identidades trigonométricas, propriedades básicas de logaritmos e exponenciais.
+Desigualdade triangular para módulos. 
+Aplicações em situações-problema.
+
+
+---------------------------
+4. COMBINATÓRIA, PROBABILIDADE E ESTATÍSTICA
+
+4.1. Problemas de contagem: o princípio fundamental da contagem, o princípio aditivo, a divisão como um processo de redução de agrupamentos repetidos. 
+Resolver problemas envolvendo a contagem de diferentes tipos de agrupamentos. Binômio de Newton. 
+
+4.2. Probabilidade de um evento num espaço equiprovável: construção de espaços amostrais finitos e representação através de frequências relativas. Probabilidade da união e da interseção de eventos. Eventos disjuntos. O conceito de independência de eventos. Probabilidade condicional. Aplicação de probabilidade em situações-problema.
+
+4.3. População e amostra. Estatística descritiva: tratamento da informação obtida como a organização e a interpretação de dados em tabelas e gráficos. Significado e aplicação de medidas de tendência central (média, mediana e moda) e de dispersão (desvio-médio, desvio-padrão e variância).
+
