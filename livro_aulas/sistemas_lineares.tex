@@ -1,0 +1,359 @@
+% Aula sobre Sistemas Lineares
+\documentclass[a4paper,12pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{amssymb}  % para o simbolo dos reais e outros
+
+% --------  Fim da seção de parâmetros globais
+
+\begin{document}    % Começo do conteúdo.
+
+\title{Matemática}
+\author{Vitor Lima (vitor\_lp@yahoo.com)}
+
+\maketitle
+
+%%%%      %%%%%%%%%%%%%%%%%%	   %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Sistemas Lineares  	%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%		%%%%		%%%%%%%%%%%%
+
+\section{Introdução}
+    \emph{Digamos que em uma prova com 50 questões, cada resposta correta valha 3 pontos e cada questão errada acarrete em uma perda de 2 pontos. \\
+    Se alguém obteve 75 pontos nesta prova, quantas questões ele acertou ?} \\ \\
+    Este é um problema típico de sistemas lineares, pois envolve mais de um valor desconhecido (neste caso, a quantidade de respostas corretas e a quantidade de respostas erradas). \\
+    Estudaremos agora, quando é possível resolver este tipo de problema, como resolver, veremos alguns exemplos e exercícios.
+
+
+
+\section{Definição}
+    Um sistema de equaçõs lineares é um conjunto finito de equações lineares, cada uma com um número finito de variáveis (ou incógnitas). \\
+    Geralmente, um sistema é representado utilizando uma chave do lado esquerdo e colocando-se um equação por linha. Por exemplo:\\
+    
+$ 
+\left\{
+\begin{array}{ll}
+\displaystyle 3x + y  = 10 \\
+\displaystyle x + y + z = 0 \\
+\displaystyle y - z = -5
+\end{array}
+\right.\\
+$
+   \\  \\ Este é um sistema linear com três equações e três incógnitas (\emph{x, y} e \emph{z}). \\
+    As soluções de um sistema linear são os valores que satisfazem todas as equações simultâneamente. Assim, para o sistema acima, temos como solução a \emph{tripla} $(x, y, z) = (5, -5, 0)$.\\
+    Note que estes valores satisfazem todas as equações (por exemplo, na primeira equação, $3\cdot5 - 5 = 15 - 5 = 10$).
+
+
+
+\section{Como resolver}
+    Nesta seção, vamos aprender duas formas de resolver sistemas lineares:
+    
+    \subsection{Método da Substituição}
+    Podemos resolver um sistema linear isolando uma variável em uma equação e substituindo-a nas outras equações. Cada vez que substituimos uma variável, ela desaparece das outras equações. Assim, repetimos isto (vamos isolando as próximas e substituindo nas equações restantes) até ficarmos só com uma variável, pois neste ponto teremos uma equação linear simples e saberemos resolver. \\
+    Por exemplo, considere o seguinte sistema de três variáveis:
+    
+$ 
+\left\{
+\begin{array}{ll}
+\displaystyle x + y + z = 0 \\
+\displaystyle 4x + 4y  + 2z = 5 \\
+\displaystyle  x -y + z = 5
+\end{array}
+\right.\\
+$
+   \\
+   Isolando a variável $x$ na primeira equação, obtemos $x = -y - z$. Então, substituimos $x$ nas duas outras equações: \\
+   Na segunda: $4(-y - z) + 4y + 2z = 5$, mas esta equação equivale à $-2z = 5$ \\
+   Na terceira: $(-y -z) -y + z = 5$, mas esta equivale à $-2y = 5$ \\
+    Assim, ficamos com o sistema \\
+$ 
+\left\{
+\begin{array}{ll}
+\displaystyle x + y + z = 0 \\
+\displaystyle -2z = 5 \\
+\displaystyle -2y = 5 \\
+\end{array}
+\right.\\
+$
+   \\
+ 
+ Da segunda equação, vemos que $z = -\frac{5}{2}$ e, da terceira, vemos que $y = -\frac{5}{2}$.\\
+ Agora, para descobrir o valor de $x$, substituimos os valores encontrados para $y$ e $z$ na primeira equação: \\
+  $x -\frac{5}{2}  -\frac{5}{2} = 0 \Rightarrow x = 5$ \\
+  Assim, a solução deste sistema é
+  $$(x, y, z) = (5, -\frac{5}{2}, -\frac{5}{2}) $$
+   
+     \subsection{Método da Adição}
+     Este método de resolução também é conhecido como \emph{Método de escalonamento}. Ele consiste em multiplicar uma equação por algum valor (já iremos discutir como escolher este valor) e depois somar as equações. \\
+     Por exemplo, considere o sistema: \\
+   $ 
+\left\{
+\begin{array}{ll}
+\displaystyle x + 4y = 100 \\
+\displaystyle 2x + 3y = 90 \\
+
+\end{array}
+\right.\\
+$
+   \\
+   
+   Podemos multiplicar a primeira equação por $-2$, obtendo:
+   $$-2x -8y = -200$$
+   agora, se somarmos esta equação com a segunda, teremos:
+   
+   $ 
+\left\{
+\begin{array}{ll}
+\displaystyle -2x -8y = -200 \\
+\displaystyle 2x + 3y = 90 \ \ \  \  \oplus\\
+\displaystyle ----------- \\
+\displaystyle 0 -5y = -110 \\
+\end{array}
+\right.\\
+$
+   \\
+   (Somamos $x$ com $x$, $y$ com $y$ e valores sem variáveis com valores sem variáveis: $-2x + 2x$, $-8y + 3y$ e $-200 + 90$).\\
+   Assim, a equação resultante nos diz que
+   $$y = \frac{-110}{-5} = 22.$$
+   Para obtermos o valor de $x$, substituimos este valor de $y$ na primeira equação: \\
+   $$x + 4\cdot22 = 100  \Rightarrow x = 100 - 4\cdot22 = 12$$
+   \emph{Observações: Como escolher por qual valor multiplicar a equação?}\\
+   O objetivo é fazer uma das variáveis desaparecer ao somarmos as equações, então, devemos olhar para as duas equações que vamos somar e descobrir qual valor fará com que uma variável suma. \\
+   Ou seja, escolha duas equações que serão somadas, escolha uma variável para desaparecer e depois, multiplique uma das equações por um valor que faça o coeficiente (número que está multiplicando a variável na equação) da variável em uma equação ficar igual ao negativo na outra equação. \\
+   Se em uma equação houver algo como $ax$, onde $a$ é um valor qualquer, e em outra equação houver algo como $x$, podemos simplesmente multiplicar a segunda por $-a$. \\
+  
+  
+\section{Classificação}
+    Aprendemos como resolver um sistema linear, mas, devemos saber que um sistema linear nem sempre tem solução, ou as vezes, possui infinitas soluções. \\
+    Apresentaremos agora uma calssificação de sistemas lineares baseada no número de soluções que ele apresente: \\
+    \subsection{Impossível}
+    Um sistema linear é dito impossível se ele não possuir soluções. Por exemplo, o sistema \\
+   $ 
+\left\{
+\begin{array}{ll}
+\displaystyle -2x -y = -2 \\
+\displaystyle 2x + y = -2 \\
+\end{array}
+\right.\\
+$
+   \\
+   não possui solução. Para ver isto, note que se multiplicarmos a primeira equação por $-1$, obteremos $2x + y = 2$, enquanto a segunda equação diz que $2x + y = -2$. Ou seja, a soma de $y$ com o dobro de $x$ deve ser ao mesmo tempo 2 e $-2$. \\
+   Se tentarmos resolver este sistema, chegaremos em algo como $0 = -4$, o que é uma igualdade falsa. Isto é mais uma prova de que este sistema não tem solução.
+   
+    \subsection{Possível}
+    Dizemos que um sistema é possível se ele possuir ao menos uma solução. \\
+    Existem dois tipos de sistemas possíveis:
+    \begin{enumerate}
+    \item \textbf{Possível e determinado:} tem exatamente uma solução. Com exceção do último exemplo, todos os outros visto até então eram assim.
+    
+    \item \textbf{Possível e indeterminado:} tem infinitas soluções. \\
+        Um exemplo de sistema possível e indeterminado é: \\
+        $ 
+\left\{
+\begin{array}{ll}
+\displaystyle x - y + z = 0 \\
+\displaystyle y - z = 0\\
+\end{array}
+\right.\\
+$
+   \\
+   Da segunda equação encontramos $y = z$. Substituindo na primeira, ficamos com $x - y + y = 0$, o que implica $x = 0$.\\
+   Assim, todas as triplas da forma $(x, y, z) = (0, \alpha, \alpha)$, com $\alpha$ sendo qualquer valor, são soluções ($x = 0$, $y = z = 1$ é solução; $x = 0$, $y = z = 2$ também é solução, $x = 0$, $y = z = 2.5$ também é solução, etc...)
+        
+    \end{enumerate}
+	
+\section{Exercícios}
+
+\begin{enumerate}
+
+
+    \item Resolva os seguintes sistemas lineares:
+    \begin{enumerate}
+    \item
+            $ 
+\left\{
+\begin{array}{ll}
+\displaystyle 2x -y + 3z = 0 \\
+\displaystyle 2y -z = 1\\
+\displaystyle 2z = -6\\
+\end{array}
+\right.\\
+$
+   \\    
+   
+   \item 
+       $ 
+\left\{
+\begin{array}{ll}
+\displaystyle 3x -2y + z = 2 \\
+\displaystyle y - z = 0\\
+\end{array}
+\right.\\
+$
+   \\    
+
+
+   \item 
+       $ 
+\left\{
+\begin{array}{ll}
+\displaystyle 3x_1 - 5x_2 = 6 \\
+\displaystyle 2x_2 = 2\\
+\end{array}
+\right.\\
+$
+   \\    
+   \end{enumerate}
+
+
+    %%% RESP: C
+    \item O sistema abaixo \\
+        $ 
+\left\{
+\begin{array}{ll}
+\displaystyle x +2y - z = 2 \\
+\displaystyle 2x -3y + 5z = 11\\
+\displaystyle x -5y + 6z = 9\\
+\end{array}
+\right.\\
+$
+   \\    
+   \begin{enumerate}
+    \item é impossível;
+    \item é possível e determinado;
+    \item é possível e indeterminado;
+    \item admite apenas a solução (1; 2; 3);
+    \item admite a solução (2; 0; 0) 
+    \end{enumerate}
+    
+    
+
+    %%% RESP: D
+    \item (FUVEST-2012) Em uma festa com $n$ pessoas, em um dado instante, 31 mulheres se retiraram e restaram convidados na razão de 2 homens para cada mulher. Um pouco mais tarde, 55 homens se retiraram e restaram, a seguir, convidados na razão de 3 mulheres para cada homem. O número $n$ de pessoas presentes inicialmente na festa era igual a
+        \begin{enumerate}
+		\item 100
+		\item 105
+		\item 115
+        \item 130
+		\item 135
+		\end{enumerate}
+    
+    
+    
+
+    %%% RESP: D
+    \item Considere o seguinte sistema de equações de incógnitas $x$ e $y$: \\
+        $ 
+\left\{
+\begin{array}{ll}
+\displaystyle 6x + 2y = 4 \\
+\displaystyle 3x + 5y = 6\\
+\displaystyle kx + 2y = 5\\
+\end{array}
+\right.\\
+$
+   \\        
+   Para que valor de $k$ este sistema é possível e determinado ?
+       \begin{enumerate}
+    	\item 1
+		\item 0
+		\item -3
+        \item 9
+		\item 2
+		\end{enumerate}
+
+
+
+    %%% RESP: E
+    \item Para qual valor de $m$  o sistema 
+    $ 
+\left\{
+\begin{array}{ll}
+\displaystyle x + y = 1 \\
+\displaystyle 3x + 3y = m + 1\\
+\end{array}
+\right.\\
+$
+   \\
+   é possível e indeterminado ?
+    \begin{enumerate}
+        \item 5
+		\item -3
+		\item 3
+        \item -2
+		\item 2
+		\end{enumerate}
+
+
+  %%% RESP: B
+  
+    \item (Mackenzie - 2008) O diretor de uma empresa, o Dr. Antonio, convocou todos os seus funcionários para uma reunião. Com a chegada do Dr. Antonio à sala de reuniões, o número de homens presentes na sala ficou quatro vezes maior que o número de mulheres também presentes na sala. Se o Dr. Antonio não fosse à reunião e enviasse sua secretária, o número de mulheres ficaria a terça parte do número de homens. A quantidade de pessoas, presentes na sala, aguardando o Dr. Antonio é
+     \begin{enumerate}
+    	\item 20
+		\item 19
+		\item 18
+		\item 15
+        \item 14
+		\end{enumerate}
+    
+      
+   
+   %%% RESP: D     
+    \item Para quais valores de $m$ e $n$ os dois sistemas a seguir são equivalentes? (Lembre-se, dois sistemas são equivalentes se possuem as mesmas soluções). \\
+    $ 
+\left\{
+\begin{array}{ll}
+\displaystyle x - y = 1 \\
+\displaystyle 2x + y = 5\\
+\end{array}
+\right.\\
+$
+   \\
+   
+   $ 
+\left\{
+\begin{array}{ll}
+\displaystyle mx -ny = -1 \\
+\displaystyle nx + my = 2\\
+\end{array}
+\right.\\
+$
+   \\
+    \begin{enumerate}
+        \item m = 10 e n = 1
+    	\item m = 0 e n = 10
+		\item m = 1 e n = 10
+		\item m = 0 e n = 1
+        \item m = 1 e n = 0
+		\end{enumerate}
+        
+    
+    
+    %%% RESP: A
+    
+    \item (UNESP - 2012) Em uma sala, havia certo número de jovens. Quando Paulo chegou, o número de rapazes presentes na sala ficou o triplo do número de garotas. Se, ao invés de Paulo, tivesse entrado na sala Alice, o número de garotas ficaria a metade do número de rapazes. O número de jovens que estavam inicialmente na sala (antes de Paulo chegar) era
+
+     \begin{enumerate}
+        \item 11
+		\item 9
+		\item 8
+		\item 6
+        \item 5
+		\end{enumerate}
+        
+        
+    
+    %%% RESP: Amélia, Lúcia e Maria possuem, nessa ordem, R$ 24,00, R$ 18,00 e R$ 36,00.
+            
+    \item (FUVEST - 2007 - Segunda fase) Se Amélia der R\$3,00 a Lúcia, então ambas ficarão com a mesma quantia. Se Maria der um terço do que tem a Lúcia, então esta ficará com R\$6,00 a mais do que Amélia. Se Amélia perder a metade do que tem, ficará com uma quantia igual a um terço do que possui Maria. Quanto possui cada uma das meninas Amélia, Lúcia e Maria?
+        
+ 
+ 
+
+\end{enumerate}
+\end{document}
